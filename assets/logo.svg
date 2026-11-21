@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <defs>
+    <!-- Gold Gradient for rings & accents -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D061" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    
+    <!-- Warm Woodgrain Gradient for circular door -->
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#806148" />
+      <stop offset="50%" stop-color="#5C4033" />
+      <stop offset="100%" stop-color="#2E1810" />
+    </linearGradient>
+
+    <!-- Glowing Steam Gradient -->
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- ICON: Circular Shire Door + Coffee Bean / Cup Motif (Left: x=6 to 54, y=6 to 54) -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Stone / Ivy Ring -->
+    <circle cx="24" cy="24" r="23" stroke="url(#goldGrad)" stroke-width="2" fill="#121423" />
+    
+    <!-- Inner Wood Door Planks -->
+    <circle cx="24" cy="24" r="20" fill="url(#woodGrad)" />
+    
+    <!-- Door Plank Lines -->
+    <line x1="16" y1="5" x2="16" y2="43" stroke="#2E1810" stroke-width="1" opacity="0.6" />
+    <line x1="24" y1="4" x2="24" y2="44" stroke="#2E1810" stroke-width="1.2" opacity="0.7" />
+    <line x1="32" y1="5" x2="32" y2="43" stroke="#2E1810" stroke-width="1" opacity="0.6" />
+
+    <!-- Center Brass Hobbit Doorknob -->
+    <circle cx="24" cy="24" r="5" fill="url(#goldGrad)" />
+    <circle cx="24" cy="24" r="2.5" fill="#2E1810" />
+    
+    <!-- Arched Coffee Cup Silhouette in lower half -->
+    <path d="M17 28 C17 34 31 34 31 28 Z" fill="#D4AF37" opacity="0.85" />
+    <!-- Cup handle -->
+    <path d="M31 29 C33 29 33 32 31 32" stroke="#D4AF37" stroke-width="1.2" fill="none" />
+
+    <!-- Subtle Steam wisps rising above the doorknob -->
+    <path d="M22 17 Q20 13 22 10 Q24 7 23 4" stroke="url(#steamGrad)" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <path d="M26 17 Q28 13 26 10 Q24 7 25 4" stroke="url(#steamGrad)" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- BRAND TYPOGRAPHY (Right: x=64 to 230) -->
+  <g transform="translate(64, 12)">
+    <!-- Main Title: THE HOBBIT -->
+    <text x="0" y="24" font-family="'Cormorant Garamond', 'Cinzel', serif" font-size="23" font-weight="700" letter-spacing="2.5" fill="#FFFFFF">
+      THE HOBBIT
+    </text>
+    
+    <!-- Subtitle: COFFEE SHOP • MONASTIR -->
+    <text x="1" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" letter-spacing="3" fill="#D4AF37" opacity="0.95">
+      COFFEE SHOP • MONASTIR
+    </text>
+  </g>
+</svg>

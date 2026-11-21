@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D061" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    <linearGradient id="woodGradIcon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#806148" />
+      <stop offset="50%" stop-color="#5C4033" />
+      <stop offset="100%" stop-color="#2E1810" />
+    </linearGradient>
+    <linearGradient id="steamGradIcon" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" stroke="url(#goldGradIcon)" stroke-width="2.5" fill="#121423" />
+  <circle cx="32" cy="32" r="26" fill="url(#woodGradIcon)" />
+  
+  <!-- Door Planks -->
+  <line x1="22" y1="8" x2="22" y2="56" stroke="#2E1810" stroke-width="1.2" opacity="0.6" />
+  <line x1="32" y1="6" x2="32" y2="58" stroke="#2E1810" stroke-width="1.5" opacity="0.7" />
+  <line x1="42" y1="8" x2="42" y2="56" stroke="#2E1810" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Center Brass Doorknob -->
+  <circle cx="32" cy="32" r="6.5" fill="url(#goldGradIcon)" />
+  <circle cx="32" cy="32" r="3" fill="#2E1810" />
+
+  <!-- Coffee Cup Silhouette -->
+  <path d="M23 37 C23 45 41 45 41 37 Z" fill="#D4AF37" opacity="0.9" />
+  <path d="M41 38 C43.5 38 43.5 42 41 42" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+
+  <!-- Steam lines -->
+  <path d="M29 23 Q27 17 29 13 Q31 9 30 5" stroke="url(#steamGradIcon)" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M35 23 Q37 17 35 13 Q33 9 34 5" stroke="url(#steamGradIcon)" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>
