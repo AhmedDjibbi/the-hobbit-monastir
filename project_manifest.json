@@ -1,0 +1,30 @@
+{
+  "business_name": "The Hobbit Coffee Shop",
+  "slug": "the_hobbit_monastir",
+  "projectId": "6312216274182431103",
+  "tokens": {
+    "industry": "dining",
+    "mood": "Thermal & Mineral Sanctuary",
+    "mood_description": "A bespoke luxury visual atmosphere reflecting The Hobbit Coffee Shop. Grounded in Thermal & Mineral Sanctuary, pairing architectural Cormorant Garamond headlines with high-legibility Plus Jakarta Sans copy, set against deep atmospheric #0B0F19.",
+    "palette": {
+      "primary": "#0F172A",
+      "secondary": "#0D9488",
+      "accent": "#F59E0B",
+      "surface": "#1E293B",
+      "background": "#0B0F19"
+    },
+    "typography": {
+      "headline": "Cormorant Garamond",
+      "body": "Plus Jakarta Sans"
+    },
+    "action": {
+      "action_label": "Reserve Table on WhatsApp",
+      "catalog_name": "Culinary Tastings & Menus",
+      "unit_name": "Experience"
+    }
+  },
+  "screens": {
+    "home_desktop": "desktop/index.html",
+    "home_mobile": "mobile/index.html"
+  }
+}
