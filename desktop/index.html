@@ -1,458 +1,388 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#dfe2f1", "on-error": "#690005", "inverse-on-surface": "#2c303b", "on-background": "#dfe2f1", "on-primary": "#283044", "tertiary-fixed": "#ffddb8", "primary": "#bec6e0", "surface-bright": "#353944", "on-secondary-fixed-variant": "#005049", "tertiary": "#ffb95f", "surface-container-low": "#171b26", "primary-container": "#0f172a", "surface-tint": "#bec6e0", "surface-container-high": "#262a35", "secondary-container": "#29a195", "on-primary-container": "#798098", "on-tertiary-fixed-variant": "#653e00", "surface-container-lowest": "#0a0e18", "on-secondary-fixed": "#00201d", "secondary": "#6bd8cb", "on-tertiary-fixed": "#2a1700", "secondary-fixed-dim": "#6bd8cb", "on-surface": "#dfe2f1", "on-surface-variant": "#c6c6cd", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#472a00", "error-container": "#93000a", "surface-container-highest": "#313540", "surface-variant": "#313540", "on-secondary": "#003732", "secondary-fixed": "#89f5e7", "on-tertiary-container": "#b47300", "primary-fixed": "#dae2fd", "primary-fixed-dim": "#bec6e0", "on-primary-fixed": "#131b2e", "outline": "#909097", "on-secondary-container": "#00302b", "inverse-primary": "#565e74", "outline-variant": "#45464d", "on-error-container": "#ffdad6", "tertiary-container": "#251400", "error": "#ffb4ab", "background": "#0f131d", "surface": "#0f131d", "surface-container": "#1c1f2a", "on-primary-fixed-variant": "#3f465c", "surface-dim": "#0f131d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["EB Garamond"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["EB Garamond"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["EB Garamond"], "headline-lg": ["EB Garamond"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-xl": ["48px", { "lineHeight": "56px", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } }</script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="The Hobbit Coffee Shop Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY8UBpeVVzHBITRzkqCQ02EknWjBngKb0h9Y06nzDx4lz4dCqKqSTRCDoFEr_UgvAA2Ja8CO6vz-FFWfgFzqO5txCTiTzRbrbRUI5ZJf2o_QFzG_gm5XPQgpuRi-8DeoRx7VIo5Oe8Zy61erpv5qYGwjWaqIIJHphCdLGdCR5KeGjiEFpcHaq_usH5qr9RwzVD_pGpKlC3uqE0mKXrHxA9v7PQFmN_e5WWG2kmjL2so8diWY-JFEdcxA-6GeDex5Y0C12bDRDydJ4"/><a class="font-headline-sm text-on-surface uppercase tracking-wider" data-path="home" href="#">The Hobbit</a></div><nav class="hidden md:flex items-center gap-space-xl" data-active-classes="bg-secondary-container text-on-secondary-container font-medium rounded-lg"><a aria-current="page" class="transition-colors bg-secondary-container text-on-secondary-container font-medium rounded-lg" data-path="home" href="#">Home</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="culinary" href="#">Culinary</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-lg"><a class="hidden lg:flex items-center gap-space-xs text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="tel:+21627954991"><span class="material-symbols-outlined text-[18px]">call</span>+216 27 954 991</a><a class="bg-secondary text-on-secondary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary-fixed transition-all flex items-center gap-space-xs" href="https://whatsapp.com" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>Reserve Table on WhatsApp</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
-<!-- Mandatory Hero Section -->
-<section class="relative w-full h-screen -mt-20 flex items-center justify-center overflow-hidden bg-surface-container-lowest">
-<div class="absolute inset-0 bg-cover bg-center scale-105 animate-pulse duration-1000" data-alt="An atmospheric, high-end fantasy coffee shop and board gaming sanctuary in Monastir at twilight. Warm amber pendant lights glow over dark polished wooden tables filled with intricate strategy board games, artisanal ceramic mugs of latte art, and shelves lined with leather-bound rulebooks. Rich emerald green velvet seating, exposed stone walls, and cozy corners create a deeply inviting, luxurious geek haven. Cinematic moody lighting with soft teal rim lights and deep shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSkFjGVu96GMRB3yQmk0rqAjxf-Kyk3EsNetOR9Tnn_j4Ft0K2meDceY2859VNdQ5Q4a_lfXaIC9ypzdwHNFdWSyG8QSvW43fG_gitvFHAWKYC4-Dq4fgCDDkOT8viwFVNIRzqEcXX8JNmj18Meg8L7A_3mSrdKMQUCTbsn4Zw7L0dP8p609lJn11WMVIgpSE2BSTMqFeEdGuFL97XA4zKkT0kdbDLMV2qonuPEmhaEPuEyqmUClHiJJqch8VNCWhDF3LgoWGQtsY')"></div>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#506c74", "error": "#ffb4ab", "secondary-fixed": "#f3dfcc", "primary": "#e6bfa1", "error-container": "#93000a", "surface-tint": "#e6bfa1", "primary-fixed": "#ffdcc2", "surface-variant": "#383432", "on-secondary": "#3a2e21", "inverse-on-surface": "#33302d", "on-secondary-fixed-variant": "#524436", "surface-dim": "#161311", "tertiary": "#aecbd4", "on-tertiary-fixed-variant": "#2f4b52", "on-primary-fixed": "#2b1704", "secondary-container": "#524436", "on-error": "#690005", "on-background": "#e9e1dd", "on-tertiary-container": "#ceecf6", "on-surface-variant": "#d3c4ba", "on-secondary-fixed": "#241a0e", "surface-container-highest": "#383432", "surface-container-low": "#1e1b19", "tertiary-fixed": "#cae8f1", "outline": "#9c8e85", "surface-container-high": "#2d2927", "on-tertiary": "#18343b", "on-primary-container": "#ffe1cc", "on-primary": "#432b16", "surface-card": "#1D1A1B", "secondary-fixed-dim": "#d6c3b1", "on-tertiary-fixed": "#001f26", "inverse-surface": "#e9e1dd", "metallic-highlight": "#F9F0E6", "surface-container-lowest": "#100e0c", "on-primary-fixed-variant": "#5c412a", "deep-background": "#010103", "outline-variant": "#4f453d", "on-surface": "#e9e1dd", "on-secondary-container": "#c4b2a0", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#aecbd4", "surface-bright": "#3c3836", "surface": "#161311", "secondary": "#d6c3b1", "surface-container": "#221f1d", "inverse-primary": "#765840", "background": "#161311", "primary-fixed-dim": "#e6bfa1", "primary-container": "#806148" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-lg": "2rem", "space-md": "1rem", "space-xl": "4rem", "space-sm": "0.5rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Cormorant Garamond" ], "headline-md": [ "Cormorant Garamond" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Cormorant Garamond" ], "headline-lg": [ "Cormorant Garamond" ], "label": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "headline-md": [ "32px", { "lineHeight": "40px", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "fontWeight": "600" } ], "label": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" } ] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-deep-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-deep-background/90 backdrop-blur-xl"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-headline-sm">local_cafe</span><span class="font-headline-lg text-headline-sm text-primary tracking-wider uppercase">The Hobbit</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg px-space-md py-space-xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg px-space-md py-space-xs" data-path="home" href="#">Home</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="culinary" href="#">Culinary</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-lg"><a class="hidden lg:flex items-center gap-space-xs text-body-sm text-secondary hover:text-metallic-highlight transition-colors" href="tel:+21627954991"><span class="material-symbols-outlined text-[18px]">call</span>+216 27 954 991</a><a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg font-label text-label tracking-wide uppercase hover:bg-primary-fixed transition-all flex items-center gap-space-xs" data-path="reserve" href="#">Reserve Table on WhatsApp</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-deep-background min-h-screen"><div class="flex flex-col w-full text-on-surface bg-deep-background">
+<!-- HERO SECTION -->
+<section class="relative w-full h-screen -mt-20 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center z-0 scale-105 transition-transform duration-1000" data-alt="An expansive luxury coffee shop interior inspired by fantasy rustic architecture, featuring dark aged wood paneling, warm glowing amber pendant lamps casting soft reflections, comfortable leather armchairs, and shelves filled with ancient books and board games under a cavernous ceiling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-cwxl0scKcx-zGn29e_gBmHXedQA9Q1YH55KDrDxGIdP_rcZeMLY4XlptOgXCMU0vDZS2YBumxVBLmLFKCcgEbz1QsEa5IOIyrJyTX_qBuqrLvKNsgtNwQ6gOnDQ-0H4o1xUj1Bkv5JXiUBoYv-w_mriF3zUz_37PEyCtEcA-0WqhnTJPcSV09j6mdxziW-UJygqbSo2U6HYRyBayW89rQn31N9OEd3JbD-6RzCRsKSA3HVVK61fYrvkCeusrDQjmTuPtgKwwetY')"></div>
     <!-- ENFORCED SUBTLE BOTTOM FADE -->
-    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #0B0F19 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #010103 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
     
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/70 to-surface/40 backdrop-blur-[2px]"></div>
-<div class="relative z-10 max-w-7xl mx-auto px-gutter w-full flex flex-col items-center text-center pt-20">
-<div class="inline-flex items-center gap-space-xs bg-tertiary-container/80 text-tertiary px-space-md py-space-xs rounded-full text-label-md mb-space-md backdrop-blur-md shadow-lg">
-<span class="material-symbols-outlined text-[16px]">military_tech</span>
-        Award of Excellence 2026
-      </div>
-<h1 class="font-headline-xl text-on-surface max-w-5xl tracking-tight mb-space-md drop-shadow-md">
-        The Hobbit Coffee Shop <span class="block text-secondary text-headline-lg mt-space-xs">Cozy Geek & Boardgame Sanctuary in Monastir</span>
-</h1>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background via-deep-background/70 to-deep-background/40 z-10"></div>
+<div class="relative z-20 max-w-7xl mx-auto px-gutter w-full flex flex-col items-center text-center pt-20">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-card/80 backdrop-blur-md mb-space-md shadow-lg">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label text-label text-primary uppercase tracking-widest">Award of Excellence 2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-[56px] text-metallic-highlight max-w-4xl tracking-tight mb-space-md leading-tight">
+        The Hobbit Coffee Shop - Cozy Geek &amp; Boardgame Sanctuary in Monastir
+      </h1>
 <p class="font-body-lg text-on-surface-variant max-w-2xl mb-space-xl">
-        Step beyond the ordinary. An upscale haven where exquisite specialty brews, artisanal gastronomy, and legendary tabletop realms converge in perfect harmony.
+        Step into an extraordinary subterranean realm where artisanal specialty coffees, legendary gourmet pastries, and hundreds of curated tabletop board games unite in warm, flickering candlelight.
       </p>
-<div class="flex flex-wrap items-center justify-center gap-space-md">
-<a class="bg-secondary text-on-secondary px-space-xl py-space-md rounded-lg font-label-md hover:bg-secondary-fixed transition-all shadow-xl flex items-center gap-space-xs" href="https://whatsapp.com" target="_blank">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-          Reserve Your Table
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<a class="bg-primary text-on-primary font-label text-label uppercase px-space-xl py-space-md rounded-lg hover:bg-primary-fixed transition-all shadow-xl flex items-center gap-space-xs" href="https://wa.me/21627954991?text=Hello%20The%20Hobbit,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank">
+<span class="material-symbols-outlined text-[18px]">event_seat</span>
+          Reserve Table on WhatsApp
         </a>
-<a class="bg-surface-container-high/80 text-on-surface px-space-xl py-space-md rounded-lg font-label-md hover:bg-surface-bright transition-all backdrop-blur-md flex items-center gap-space-xs" href="#menu">
-<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+<a class="px-space-xl py-space-md rounded-lg font-label text-label uppercase text-metallic-highlight hover:bg-surface-card/50 transition-all border border-secondary/20" href="#menu">
           Explore Menu
         </a>
 </div>
 </div>
-<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-surface to-transparent pointer-events-none"></div>
 </section>
-<!-- Section 1: Brand Narrative / Distinctive Value (Bento Layout) -->
-<section class="w-full py-28 max-w-7xl mx-auto px-gutter">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-widest font-bold">Philosophy & Craft</span>
-<h2 class="font-headline-lg text-on-surface mt-space-xs">Where Epic Tales Meet Exceptional Brews</h2>
-</div>
-<p class="text-on-surface-variant max-w-md font-body-md">
-        Nestled right in front of the Faculty of Sciences in Monastir, our sanctuary is designed for thinkers, dreamers, strategists, and coffee aficionados.
-      </p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
-<div class="bg-surface-container-low p-space-xl rounded-xl flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-4px] transition-all duration-300">
-<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-secondary/5 rounded-full blur-2xl group-hover:bg-secondary/10 transition-all"></div>
-<div>
-<div class="w-12 h-12 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-lg">
-<span class="material-symbols-outlined text-[24px]">nest_cam_wired_stand</span>
-</div>
-<h3 class="font-headline-md text-on-surface mb-space-sm">Immersive Atmosphere</h3>
-<p class="text-on-surface-variant font-body-md">
-            Dimly lit wooden alcoves, warm ambient lighting, and bespoke seating crafted for hours of uninterrupted strategic gameplay and deep conversation.
-          </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-outline-variant/10 flex items-center justify-between text-secondary font-label-md">
-<span>01 / Sanctuary</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</div>
-</div>
-<div class="bg-surface-container-low p-space-xl rounded-xl flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-4px] transition-all duration-300">
-<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-tertiary/5 rounded-full blur-2xl group-hover:bg-tertiary/10 transition-all"></div>
-<div>
-<div class="w-12 h-12 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-space-lg">
-<span class="material-symbols-outlined text-[24px]">coffee</span>
-</div>
-<h3 class="font-headline-md text-on-surface mb-space-sm">Artisanal Craft</h3>
-<p class="text-on-surface-variant font-body-md">
-            Single-origin beans roasted to perfection, cold brews steeped for 18 hours, and signature house-crafted syrups designed to awaken the senses.
-          </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-outline-variant/10 flex items-center justify-between text-tertiary font-label-md">
-<span>02 / Purity</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</div>
-</div>
-<div class="bg-surface-container-low p-space-xl rounded-xl flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-4px] transition-all duration-300">
-<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
-<div>
-<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center mb-space-lg">
-<span class="material-symbols-outlined text-[24px]">casino</span>
-</div>
-<h3 class="font-headline-md text-on-surface mb-space-sm">Community & Boardgaming</h3>
-<p class="text-on-surface-variant font-body-md">
-            Over 150 curated board games ranging from light social card games to deeply immersive strategy epics, paired with a vibrant community of passionate players.
-          </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-outline-variant/10 flex items-center justify-between text-primary font-label-md">
-<span>03 / Fellowship</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 2: Flagship Culinary Tastings & Menus Grid -->
-<section class="w-full py-28 bg-surface-container-lowest relative" id="menu">
-<div class="max-w-7xl mx-auto px-gutter">
+<!-- BRAND NARRATIVE & 3 CORNERSTONE PILLARS -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter w-full">
 <div class="text-center max-w-2xl mx-auto mb-space-xl">
-<span class="text-secondary text-label-sm uppercase tracking-widest font-bold">Gastronomy</span>
-<h2 class="font-headline-lg text-on-surface mt-space-xs">Flagship Culinary Tastings</h2>
-<p class="text-on-surface-variant mt-space-sm font-body-md">
-          Carefully concocted elixirs and gourmet bites crafted to fuel your greatest tabletop victories.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
-<!-- Item 1 -->
-<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition-all duration-300">
-<div>
-<div class="relative h-56 overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="The Shire Signature Caramel Macchiato served in a dark ceramic mug with intricate layered latte art, rich dark espresso, velvety microfoam, and thick golden caramel drizzle trickling down the sides. Moody moody cafe background with warm ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnHgXjp3IdbvnYT_gJuoLUK6UBKrS5qcbt7ABC0c-_bPB9VTum3q9SXMh8mNwDTXt41ns01IQRaLc4IE--6z1j17Acwa6r0WpRhCk-E-yo4F2nhdRtfpcK0u96yGr3oM3bm89kdOm2z0R3w27h0Ga4MRxGHQq4HdOHhu9GgCE870IoFj3EE6r0qXvt9pG3fyLxUvMp7Qw3YSCS_Uf2xDW6a5jCM8FbHwbaS2-YhjDal3Fhsoz7BHDtshl28pnNP0Msv7oPOKIRu6k')"></div>
-<div class="absolute top-space-md left-space-md bg-surface/80 backdrop-blur-md px-space-sm py-1 rounded text-label-sm text-on-surface">
-                Specialty Brews
-              </div>
-<div class="absolute bottom-space-md right-space-md bg-secondary text-on-secondary px-space-sm py-1 rounded text-label-sm font-bold">
-                6.5 TND
-              </div>
-</div>
-<div class="p-space-lg">
-<div class="flex items-center gap-space-xs text-on-surface-variant text-label-sm mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-                Artisanal Brew
-              </div>
-<h3 class="font-headline-sm text-on-surface mb-space-xs">The Shire Signature Caramel Macchiato</h3>
-<p class="text-on-surface-variant font-body-sm line-clamp-3">
-                Double espresso pulled over velvety steamed milk, infused with house-made vanilla syrup and drizzled with buttery salted caramel.
-              </p>
-</div>
-</div>
-<div class="p-space-lg pt-0">
-<a class="w-full bg-surface-container text-on-surface py-space-sm rounded-lg text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center justify-center gap-space-xs" href="https://whatsapp.com" target="_blank">
-<span class="material-symbols-outlined text-[16px]">chat</span>
-              Reserve on WhatsApp
-            </a>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition-all duration-300">
-<div>
-<div class="relative h-56 overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Mithril Cold Brew served in a tall crystal glass with clear ice cubes, single-origin dark cold brew coffee topped with a thick, velvety layer of aerated sweet Madagascar vanilla cream foam floating on top. Elegant dark aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9rH60zHBNJDlCqkNxuWKPASgJBWW4dgm61UdS2QGC-DprAx-z01-HPjGEnN-IKJdoTSh-8qKkNq5_3qXN1CCXPYTUjA-H5NopX2ZqIr8LXucGL9dP0HY8hNSM4ItcsKDVuMs9PHiSyWuDls3-R6NDr6E89vQRgGnmeePdBE6BpEis9n7lvlxCwuXXsTX_6krKhqEyt7KCvtxuAU00lctK0scLQNcxuz63OKe-wlqfOMXvHzUbyaaOftGfg4sQ2HM-AVwAsAdb1_E')"></div>
-<div class="absolute top-space-md left-space-md bg-surface/80 backdrop-blur-md px-space-sm py-1 rounded text-label-sm text-on-surface">
-                Signature Coffees
-              </div>
-<div class="absolute bottom-space-md right-space-md bg-secondary text-on-secondary px-space-sm py-1 rounded text-label-sm font-bold">
-                7.0 TND
-              </div>
-</div>
-<div class="p-space-lg">
-<div class="flex items-center gap-space-xs text-on-surface-variant text-label-sm mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-                18h Slow Drip
-              </div>
-<h3 class="font-headline-sm text-on-surface mb-space-xs">Mithril Cold Brew & Vanilla Foam</h3>
-<p class="text-on-surface-variant font-body-sm line-clamp-3">
-                Slow-steeped single-origin Arabica cold brew crowned with silky, aerated sweet Madagascar vanilla cream.
-              </p>
-</div>
-</div>
-<div class="p-space-lg pt-0">
-<a class="w-full bg-surface-container text-on-surface py-space-sm rounded-lg text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center justify-center gap-space-xs" href="https://whatsapp.com" target="_blank">
-<span class="material-symbols-outlined text-[16px]">chat</span>
-              Reserve on WhatsApp
-            </a>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition-all duration-300">
-<div>
-<div class="relative h-56 overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Lembas Fresh Waffle topped with an abundant mountain of warm melted Nutella cocoa cream, crushed vibrant green pistachios, and neat slices of fresh ripe bananas. Plated elegantly on a slate dish." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaeMKFuDFsEUwJThSFIqrdH4-HVEwqK64Xi-AznEhV82nSHU3N_qoQ3JhYRhculynAIoxSB2cHgy8psgItT1cad9LEv-aRU2MuUMlbnA1NDAA0GrJu5axdvk3DhpFZKa6MhToWKa4Iyitn8zNpyw7fvQk7TuwktaJ2KP3fQg4kkOGvxcD7krorUgZYw6CgrR_Qvej-r26BydX-Ym7rpZIXZpgmk059JJQqhgPKjAXu_0cCt2S8Ps7G0JZDbaha05v5MIDGcGo2CJk')"></div>
-<div class="absolute top-space-md left-space-md bg-surface/80 backdrop-blur-md px-space-sm py-1 rounded text-label-sm text-on-surface">
-                Gourmet Bakery
-              </div>
-<div class="absolute bottom-space-md right-space-md bg-secondary text-on-secondary px-space-sm py-1 rounded text-label-sm font-bold">
-                9.5 TND
-              </div>
-</div>
-<div class="p-space-lg">
-<div class="flex items-center gap-space-xs text-on-surface-variant text-label-sm mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-                Freshly Baked
-              </div>
-<h3 class="font-headline-sm text-on-surface mb-space-xs">Lembas Fresh Waffle & Nutella Mountain</h3>
-<p class="text-on-surface-variant font-body-sm line-clamp-3">
-                Crispy golden Belgian waffle loaded with warm melted hazelnut cocoa cream, crushed pistachios, and fresh banana slices.
-              </p>
-</div>
-</div>
-<div class="p-space-lg pt-0">
-<a class="w-full bg-surface-container text-on-surface py-space-sm rounded-lg text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center justify-center gap-space-xs" href="https://whatsapp.com" target="_blank">
-<span class="material-symbols-outlined text-[16px]">chat</span>
-              Reserve on WhatsApp
-            </a>
-</div>
-</div>
-<!-- Item 4 -->
-<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition-all duration-300">
-<div>
-<div class="relative h-56 overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Rivendell Smoked Turkey and Cheese Bagel toasted to perfection with sesame seeds, overflowing with premium smoked turkey slices, melting gouda cheese, crisp baby spinach leaves, and herbed cream cheese spread." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcMejrSVmMAy38sjVdDWGTZDrXI6S-JSr-f7xNQotd4sndDC97XpKPHYKZw6R-_T_DcSg_Efm-mrYJLaLs14b156L0JvvTuPvBTKscC1KUuJrC-a_bBXmUApYbhXxntaKJ4HkMfNTLFb7F04Ktmf_I1udu9JFE3jrjE9ELvZe1cffYb8yiVl4gxvnRgbjqIIzJNbIV3PhvVcz7Y-QJWF3l50iNMzl54O1LGqWrMC8XxMJcp71oYrgv2ZpaCvf7ckhI3Nu3S4xCmZI')"></div>
-<div class="absolute top-space-md left-space-md bg-surface/80 backdrop-blur-md px-space-sm py-1 rounded text-label-sm text-on-surface">
-                Savory Bites
-              </div>
-<div class="absolute bottom-space-md right-space-md bg-secondary text-on-secondary px-space-sm py-1 rounded text-label-sm font-bold">
-                8.5 TND
-              </div>
-</div>
-<div class="p-space-lg">
-<div class="flex items-center gap-space-xs text-on-surface-variant text-label-sm mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-                Toasted Fresh
-              </div>
-<h3 class="font-headline-sm text-on-surface mb-space-xs">Rivendell Smoked Turkey & Cheese Bagel</h3>
-<p class="text-on-surface-variant font-body-sm line-clamp-3">
-                Artisan toasted sesame bagel packed with premium smoked turkey, melted gouda, fresh baby spinach, and herbed cream cheese.
-              </p>
-</div>
-</div>
-<div class="p-space-lg pt-0">
-<a class="w-full bg-surface-container text-on-surface py-space-sm rounded-lg text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center justify-center gap-space-xs" href="https://whatsapp.com" target="_blank">
-<span class="material-symbols-outlined text-[16px]">chat</span>
-              Reserve on WhatsApp
-            </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 3: Curated Visual Showcase (6-item Photo Bento Grid) -->
-<section class="w-full py-28 max-w-7xl mx-auto px-gutter">
-<div class="text-center max-w-2xl mx-auto mb-space-xl">
-<span class="text-secondary text-label-sm uppercase tracking-widest font-bold">Visual Sanctuary</span>
-<h2 class="font-headline-lg text-on-surface mt-space-xs">A Glimpse Into Our Realm</h2>
-<p class="text-on-surface-variant mt-space-sm font-body-md">
-        Every corner of The Hobbit is meticulously designed to transport you into a cozy world of camaraderie and craft.
-      </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-space-md auto-rows-[240px]">
-<!-- Item 1: Large span -->
-<div class="md:col-span-2 rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Cozy interior seating area of The Hobbit Coffee Shop with plush velvet emerald green armchairs, dark rustic wooden low tables, board game boxes stacked neatly on shelves, and warm amber pendant lamps casting a soft glow." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAapG9dkYzVV3mLE43U4gL_R2DkBMVljFdzDPpBallg3HVlt6oowmjFBobi0kcHBNBCZFMtJ5u2BWBc_aipMOSedVso1zTHBuwXVAdEOftRqjNw8CANoqYXSPaywp0X6XNGdk-QkIwNSVOu_DNCtye5DqvbzG5keB0z_OKXq_Sh4Rjo3q1uTKZX8tqTvK0tjmrcPwNwhibvBCvDGp-NdTjyRLthMbHgG8PFRjAYyRU4y8BZURcfljlufqeOecvR45WXcpapSYW4bEY')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Ambiance</span>
-<h4 class="font-headline-sm text-on-surface">The Main Lounge & Seating</h4>
-</div>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Barista expertly pouring steamed milk into a ceramic coffee cup to create delicate latte art inside The Hobbit Coffee Shop's moody wooden bar." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL1PMaMKJhAicP5q8OrMFrRwhW20Lvk6GX0doChpdRzsyhNal3tT7I82Uh-vrF1H29hPXjjpi0iw3YsWw_CJl6b3SjqY1IbshHhXQgPXvZq0p1ydwPUnsnYH9k1uVrWoP4ekRpWsOvmo-NBkR8c0GgeIWKm4twdqvTemouX3O26G4ODEapX_kCFP7z05E4X1Wnzur4TepPW3LqnlfCqMbc0o6oKUIHqHIEEZPhaGhexrBa393beZgOSO5kehXK92h1SSvRDzai1EE')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Craft</span>
-<h4 class="font-headline-sm text-on-surface">Artisanal Espresso Bar</h4>
-</div>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Detailed close-up of wooden board game shelves packed with colorful strategy game boxes, miniature figurines, and rulebooks under warm lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBP9DOweaY_3AzbRPbKkPF8SYcQD20gTBfQftugkQnXBW6JDueF-88kbiz66QxL2ms30lygQhrunvLhCRYXMzMeO6IeJrdB0kS1gBTOy8_Y4emlVuekipMK5GVl6_RaQXtpN_Ij8agvmb2qXhDrVwO90fSpyiGzn-ew7SzF7TD3rPc_9-migMqoR8GL0gHLTZuuJaYaxQvnpgYp-4UKbVCbCEC8R1SM8kihsmapGk5r0r0MkvXfFtLW7nPUAn5QkISiDzc4UEmyzrc')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Library</span>
-<h4 class="font-headline-sm text-on-surface">150+ Board Games</h4>
-</div>
-</div>
-</div>
-<!-- Item 4 -->
-<div class="rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Freshly baked pastries and artisan cakes displayed in a glass counter case under warm atmospheric spotlighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzPqWhT9evNXnEXQYw8fty3LaiIFkjiOnOS3cCjJLF2LmpcSbryBNqLmYD98UisKsibvoxtPSpZfzxbL1T-CpQzaR6yoQDDVl9If-WohzHvD74PeGOHHKNJze_gSDpXlY-H6-tbG5-tBzc8wB3wNZtMQeGU9OiZeUgUCo_5_TG6HkZS4n2FQMI51zw0GJpGYGjTKzSlg_mhwzad5h_SkiC384eDewRj8yB_w_EuDd2qcmk5KltdjcUQ2wpX7NzGpbpKJT5rnAAVLc')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Bakery</span>
-<h4 class="font-headline-sm text-on-surface">Fresh Daily Pastries</h4>
-</div>
-</div>
-</div>
-<!-- Item 5: Large span -->
-<div class="md:col-span-2 rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A group of university students from Monastir Faculty of Sciences laughing and strategizing intensely over an epic fantasy board game session with coffee mugs on the table." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZNIHBRd3FHYhE7WRjzwYk2EExMcH0IVbDxTXss3kM8ilXj1l8b-MhmIJopE3SdhCbCLI6voiWq_ECcViSWBBPi-6lDVaqs30s0MrMi3ofDWT8oS_UqyTNfNZI2gW0yZZ_sGlcVqdPu9KRvp3rVDzFtQHzHFj1iZeY5cfa4j86erq6DZIBr5dBE5cZozMrbEBIHGCLV3q-fBFxZM3X6ju4ODZvndtqeZwAh0tEfJwzH88_o0L_r1v-zpDKbJQxfmT6tJq6hpQbLhk')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Community</span>
-<h4 class="font-headline-sm text-on-surface">Tabletop Fellowship</h4>
-</div>
-</div>
-</div>
-<!-- Item 6 -->
-<div class="rounded-xl overflow-hidden relative group">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a cold brew glass tower extracting smooth iced coffee drops with cinematic lighting in a dark cozy coffeehouse." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARicw-pFXYUmrTMH58U7GJirWZBjg-zI8ifu5qOzYmgnnvagydL8uIYIMjv_wC_5WRq2Nlwo1TgzipWgUntR1mR0ufoL9MFeGB7ZEEgkGsEOwvXa50cLesjOUvYyCpusBeunB7gbUmze6IoMC0Gh2ZuyZJ9PvpusVI3Rc2A9SljuCi6IDzezR1OB1PyDedivmCIPYJSioX3zNLT9uch4E-XLmDVIE_JexVOlf_RZcprzy2TYjmxEa7VUjgqTHhs675b-KE9emyB5s')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
-<div>
-<span class="text-secondary text-label-sm uppercase tracking-wider font-bold">Beverage</span>
-<h4 class="font-headline-sm text-on-surface">Slow Drip Cold Brew</h4>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 4: Verified Testimonials & Client Endorsements -->
-<section class="w-full py-28 bg-surface-container-low relative">
-<div class="max-w-7xl mx-auto px-gutter">
-<div class="text-center max-w-2xl mx-auto mb-space-xl">
-<span class="text-secondary text-label-sm uppercase tracking-widest font-bold">Endorsements</span>
-<h2 class="font-headline-lg text-on-surface mt-space-xs">Words From The Fellowship</h2>
-<p class="text-on-surface-variant mt-space-sm font-body-md">
-          Hear from our cherished patrons who have found their second home at our Monastir sanctuary.
-        </p>
+<span class="font-label text-label text-primary uppercase tracking-widest mb-space-xs block">Sanctuary Philosophy</span>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">Where Fellowship Meets Exceptional Craft</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-<!-- Review 1 -->
-<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between">
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between group hover:-translate-y-1 transition-transform">
 <div>
-<div class="flex items-center gap-space-xs text-tertiary mb-space-md">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">coffee</span>
 </div>
-<p class="font-headline-sm text-on-surface italic mb-space-lg">
-              "An absolute gem right in front of the Faculty! The caramel macchiato is unmatched in Monastir, and the board game collection is massive."
-            </p>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-sm">Artisanal Coffee &amp; Roasts</h3>
+<p class="font-body-md text-on-surface-variant">Carefully sourced single-origin Arabica beans, masterfully roasted and brewed with precision. From velvety macchiatos to smooth nitro cold brews.</p>
 </div>
-<div class="flex items-center gap-space-md pt-space-md border-t border-outline-variant/10">
-<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary font-headline-sm flex items-center justify-center font-bold">
-              AM
-            </div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label uppercase text-label">
+<span>Discover Brews</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between group hover:-translate-y-1 transition-transform">
 <div>
-<h4 class="font-label-md text-on-surface">Anis Meddeb</h4>
-<p class="text-body-sm text-on-surface-variant">Computer Science Student & Regular Gamer</p>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">casino</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-sm">Immersive Boardgame Sanctuary</h3>
+<p class="font-body-md text-on-surface-variant">An expansive library of over 300 strategy, cooperative, and casual tabletop games. Gather your fellowship for epic campaigns over evening brews.</p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label uppercase text-label">
+<span>Explore Library</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </div>
 </div>
-</div>
-<!-- Review 2 -->
-<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between">
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between group hover:-translate-y-1 transition-transform">
 <div>
-<div class="flex items-center gap-space-xs text-tertiary mb-space-md">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">bakery_dining</span>
 </div>
-<p class="font-headline-sm text-on-surface italic mb-space-lg">
-              "The atmosphere is so cozy and peaceful. It’s my favorite spot to unwind after classes, enjoy a cold brew, and play D&D with friends."
-            </p>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-sm">Middle-earth Gourmet Bakery</h3>
+<p class="font-body-md text-on-surface-variant">Hearty artisanal treats inspired by shire feasts. Warm waffles piled high with Belgian chocolate, artisan bagels, and freshly baked pastries.</p>
 </div>
-<div class="flex items-center gap-space-md pt-space-md border-t border-outline-variant/10">
-<div class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary font-headline-sm flex items-center justify-center font-bold">
-              YB
-            </div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label uppercase text-label">
+<span>View Bakery</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FLAGSHIP CULINARY TASTINGS & MENUS GRID -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter w-full" id="menu">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
 <div>
-<h4 class="font-label-md text-on-surface">Yasmine Ben Ali</h4>
-<p class="text-body-sm text-on-surface-variant">Architecture Student</p>
+<span class="font-label text-label text-primary uppercase tracking-widest mb-space-xs block">Handcrafted Offerings</span>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">Flagship Tastings &amp; Menus</h2>
 </div>
+<p class="font-body-md text-on-surface-variant max-w-md mt-space-sm md:mt-0">Every item is prepared fresh upon order using premium ingredients and secret house-crafted infusions.</p>
 </div>
-</div>
-<!-- Review 3 -->
-<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Item 1 -->
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row group">
+<div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center" data-alt="A tall glass mug of The Shire Signature Caramel Macchiato layered with dark espresso, silky steamed milk, and intricate drizzles of golden salted caramel against a warm rustic wooden tabletop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6ZRWZn9TOf8mENJvWQPJu2VIryAJObzko1SmjMfrcZpG5Oh079BzfrzbaupAXol2ANx3wZ7GiHHur22gdM9oXTnxJ1xG1McEPu3_vOlLAlBHC9jeewdxRFwD9ocsTN9NgIpUEHA0aFPvyLaEUkhmDQBT2jhYgKEbYfnv7ORJJvHyeqfHX6yWhGZU4PK6jvyyZRWR5162CJEZsIadOEpyMR3WNkDSMSITmsx-RI1OzdMDRGxVdyOD-5gvuK5vDNbsIWsjjjIExU2E')"></div>
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
 <div>
-<div class="flex items-center gap-space-xs text-tertiary mb-space-md">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label text-label text-primary uppercase">Specialty Brews</span>
+<span class="font-headline-sm text-headline-sm text-metallic-highlight">6.5 TND</span>
 </div>
-<p class="font-headline-sm text-on-surface italic mb-space-lg">
-              "Unmatched hospitality and incredible attention to detail. The waffles and specialty coffees are top tier. Highly recommended!"
-            </p>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-xs">The Shire Signature Caramel Macchiato</h3>
+<p class="font-body-sm text-on-surface-variant">Double espresso pulled over velvety steamed milk, infused with house-made vanilla syrup and drizzled with buttery salted caramel.</p>
 </div>
-<div class="flex items-center gap-space-md pt-space-md border-t border-outline-variant/10">
-<div class="w-12 h-12 rounded-full bg-primary text-on-primary font-headline-sm flex items-center justify-center font-bold">
-              KZ
-            </div>
+<div class="mt-space-md pt-space-md flex items-center gap-space-xs text-secondary text-body-sm">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span>House Favorite</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row group">
+<div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center" data-alt="A crystal glass filled with Mithril Cold Brew topped with a thick crown of velvety white Madagascar vanilla sweet cream foam, illuminated by soft golden pendant lights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmeMHHiarw4Ei456K0Ls1SVLoKUzPozcxpNA5xcL_W5izb_J1fBgjaHKNEdeDwUSk1jU9-wckHOLBBSnM8kS0ugTRVrM6fa8qEPPz2UbQSwMpBq2ubVJvzMoEhRvR-R3CuI3Iyd87Rno5wO1r_ffei5qUWuSmfpsFBD3r5nnqfK2pj0K5wLXLU9a647brx7mO5w5_3vTFhgXQuy7S2aiZSTDo8x5CNVEHB0rlDiKYOSfkCofdKaEp0z-LSfoR780wWwFN0SSoy7dE')"></div>
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
 <div>
-<h4 class="font-label-md text-on-surface">Karim Zayani</h4>
-<p class="text-body-sm text-on-surface-variant">Board Game Enthusiast</p>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label text-label text-primary uppercase">Signature Coffees</span>
+<span class="font-headline-sm text-headline-sm text-metallic-highlight">7.0 TND</span>
 </div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-xs">Mithril Cold Brew &amp; Vanilla Foam</h3>
+<p class="font-body-sm text-on-surface-variant">Slow-steeped single-origin Arabica cold brew crowned with silky, aerated sweet Madagascar vanilla cream.</p>
+</div>
+<div class="mt-space-md pt-space-md flex items-center gap-space-xs text-secondary text-body-sm">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+<span>Refreshing &amp; Smooth</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row group">
+<div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center" data-alt="A golden crispy Belgian waffle loaded with warm melted Nutella cream, scattered crushed pistachios, and freshly sliced bananas on a dark slate plate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtb-xOjdPx8ymun3fdufDVdzC0o7MdIRDUsAQSkRymL3t-J8waG82USBTz0dnhMgVfcRl2VJxS9CVjiYm8ae_FIfvZLWH5a_FRwcFbuYSeX131pnn_14MVVYqHDHvvoU03sjd57ZlpMHnUPk28LWkM8OBm4vLjIzjdEuxXMiz0-pGuBPQ7oaCRZJl1Xt_skoS5939Gr6i9IH2JGdwogb7kxSWL6ulTvu896TyK5UVro28nWXHvAZGu-9HdolvkPD05nbvuy4HcnJE')"></div>
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label text-label text-primary uppercase">Gourmet Bakery</span>
+<span class="font-headline-sm text-headline-sm text-metallic-highlight">9.5 TND</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-xs">Lembas Fresh Waffle &amp; Nutella Mountain</h3>
+<p class="font-body-sm text-on-surface-variant">Crispy golden Belgian waffle loaded with warm melted hazelnut cocoa cream, crushed pistachios, and fresh banana slices.</p>
+</div>
+<div class="mt-space-md pt-space-md flex items-center gap-space-xs text-secondary text-body-sm">
+<span class="material-symbols-outlined text-[16px]">cake</span>
+<span>Bestselling Indulgence</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row group">
+<div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center" data-alt="An artisanal toasted sesame bagel stuffed with folded smoked turkey slices, melting gouda cheese, crisp baby spinach leaves, and herb cream cheese." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVRxURP5np6K6g3SR1kKbNdcfp3TmdrGJWCoC1HgjcAt0NE_f5er11Ep8rn5fClwX9_sDpAq8_hEdrXCqnpRXxtk2vnZvQ5IMeHxg97Q7RvA6oekTnBBwu5Ax1mFHq1MaHGHpmg84lXOEMS94Jop7cLdrp3sl0ylnlIkosErQ2ujjzo9zuf-JHLAfc-Ug0uMkItwB6pxpKHxKTcfBRulCdsY5XPXm73c5l-NxX5NuiipJw1c_O0lYKNCSItGp9C8Dx88GGUD9mVCU')"></div>
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label text-label text-primary uppercase">Savory Bites</span>
+<span class="font-headline-sm text-headline-sm text-metallic-highlight">8.5 TND</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight mb-space-xs">Rivendell Smoked Turkey &amp; Cheese Bagel</h3>
+<p class="font-body-sm text-on-surface-variant">Artisan toasted sesame bagel packed with premium smoked turkey, melted gouda, fresh baby spinach, and herbed cream cheese.</p>
+</div>
+<div class="mt-space-md pt-space-md flex items-center gap-space-xs text-secondary text-body-sm">
+<span class="material-symbols-outlined text-[16px]">lunch_dining</span>
+<span>Savory Masterpiece</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Section 5: Quick Reserve Table on WhatsApp Hook -->
-<section class="w-full py-28 max-w-7xl mx-auto px-gutter">
-<div class="bg-surface-container-low rounded-2xl p-space-xl lg:p-16 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-space-xl shadow-2xl">
-<div class="absolute -right-20 -top-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
-<div class="max-w-xl">
-<span class="text-secondary text-label-sm uppercase tracking-widest font-bold">Instant Booking</span>
-<h2 class="font-headline-lg text-on-surface mt-space-xs mb-space-md">Secure Your Table at The Hobbit</h2>
-<p class="text-on-surface-variant font-body-md mb-space-lg">
-          Choose your preferred date, time slot, and seating area below. Clicking reserve will instantly generate a direct WhatsApp message to our concierge.
-        </p>
-<div class="flex items-center gap-space-lg text-on-surface-variant text-body-sm">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-            Instant Confirmation
-          </div>
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-            No Booking Fees
-          </div>
+<!-- CURATED VISUAL SHOWCASE BENTO GRID -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter w-full">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label text-label text-primary uppercase tracking-widest mb-space-xs block">Visual Atmosphere</span>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">Glimpses of the Sanctuary</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md h-auto md:h-[600px]">
+<div class="md:col-span-2 rounded-xl overflow-hidden relative group h-64 md:h-full bg-cover bg-center" data-alt="An expansive view of The Hobbit main dining hall showing rustic wooden booths, warm amber sconces, and board game shelves lining dark timber walls." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhIydLfMSCTRDvAz4g2TB_6AoKhHmf5i7s9f-RUkD0j8QqlK346Sg9SNOQIZ_K2_KSgSLXovsvcGG9XdPHVZZYnHC8Y_IaRE-RxPhghtdmPwAUPbAGCupixVGwD5dOLj0QNbmgKQwBw25VHUEIlQQzr2oc1dOXhgD1Lrf0A9K_hxEZMTg9Wgi6f4R2YlJuKGPurP8jJDNHDqIO8oYGEsv-ThevcP97Ld5eHNLH7FQerHHOWlTPrZbuY1Eu-tXzE_A7gfVmdRF4LHQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-space-lg left-space-lg right-space-lg">
+<span class="font-label text-label text-primary uppercase tracking-wider block mb-space-xs">Main Tavern Hall</span>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">The Fellowship Dining Chamber</h3>
 </div>
 </div>
-<div class="w-full lg:w-[480px] bg-surface p-space-xl rounded-xl flex flex-col gap-space-md">
+<div class="grid grid-rows-2 gap-space-md h-full">
+<div class="rounded-xl overflow-hidden relative group h-48 md:h-auto bg-cover bg-center" data-alt="A close-up shot of artisanal coffee preparation with rich dark espresso crema pouring into a ceramic cup in a warmly lit nook." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGda9Zhke0o8Mq9Q9TuufmqYPGaq_gcJ_bLSYtPbkjaDhcwZV79mtpHJuLdWtpFvDld43IAc7qlcu9AtAZcEnMfVgC8fb0d-fVtEXV338Flf8QJARzDHw-Yqx55Vs9Gpk7IcYV8pd2Kb55DFe5sNYYTcfs42j2qXh6gHtRBeduzXtULnGURb7XulyD7vuXOeP22EKSwJNx9YAuZaNQRBVw7I92_J3a20DmRhQq1bVPuz6ARxI78wkgM0IUWeA_oLUxA4TqZb_-B68')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<h3 class="font-headline-sm text-[20px] text-metallic-highlight">Artisanal Extraction</h3>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden relative group h-48 md:h-auto bg-cover bg-center" data-alt="Shelves stacked with vintage board game boxes, wooden meeples, and dice sets next to glowing fairy lights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtZL5OzwiBG0xzzYtvzSIf_znE5oQLEtD4jBlc2Lk7iT3tLeMiuTWANRY4Oc97-S_kDeBmIhQA0l3P4yBXJTEARcOvhV_HVIuZ8uIdknD6h__86r-S4Vs_EgAUenA00X1oRWQD0QMWlp-aoQWXFTOMEIU3b4vAJ7FMsncrPxQpl6L1lHL7Aiio6XWEjSJ0MUZNnwXHrwvBVD4tBCc2594O2IDTAsMnDJzphzsYrvA16UGwBLdKIPczBGHrL5-rjquI7ZWq9lg-KuY')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<h3 class="font-headline-sm text-[20px] text-metallic-highlight">The Boardgame Library</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-md">
+<div class="rounded-xl overflow-hidden relative group h-64 bg-cover bg-center" data-alt="A cozy corner booth illuminated by a copper lantern with two players deeply engaged in a complex board game." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBj0ih9zSVY6ITWMnGb-S8R73fbmxLDYKxX6WCBc2WAMiWkk99JEbLGNL-FFKzgWtppxwzautjd9Jund3sTRzVQf0VjxYOQkmBOREDargoaVHCXgSgMli-hzTsPLo_VUZHH8vPzei9hVYLqccnKg2btKPh6Hpu-wkAE1t-m3ohPre4eChRByWssq7BbjgSMSExkdRmN-vxzg0MJXh3sROeidgJLjkENeE7UNlL7xq4GjwuGEgA0E3MVWHYtNSylzGSpszvx8bkBF3g')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md">
+<h3 class="font-headline-sm text-[20px] text-metallic-highlight">Strategy Nooks</h3>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden relative group h-64 bg-cover bg-center" data-alt="Freshly baked pastries and gourmet waffles displayed on a wooden counter with warm backlighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBd-Ocre1b1RjtKbBaANImVg3-_rmnKAd5tR_I7hIgimvlq7cu44i_6j2Yf3ZPLl641QDsIKptGYehF1NUWDJkCNzY4sueEXTmXY5NXmRw5ZLbxWeoWa2gnnz_g9O5_f7l7sABysNtl1xMQBKN5nQ9_sQwu8_AR_OUGTKcft5F6neXXxVyZzr52iReme4fQ5qct4DrQ7lgZFrXeGDpoX3rn4zLtOVN9EnMblmRrYy9HSLKK65d76UVkSx08to7jLftbCfrYye2tBU8')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md">
+<h3 class="font-headline-sm text-[20px] text-metallic-highlight">Daily Feast</h3>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden relative group h-64 bg-cover bg-center" data-alt="The welcoming entrance hallway adorned with rustic wood signs and amber lighting welcoming travelers into Monastir." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCI355C5fCYaMy1KaIROZ4Gm1avGicVxRSgI3nhKEkVTNlk2Hl5SCx0BP8wwJpBw7GVHKKbWrdzbxfByLL0kZ-8uv48rQvqflIO2S6Q3aNm-C6t6eCmYy3AOO9Fx2v_fx3Yc7MAK3Ec8KEUkaAmyEtMORTbqrn5ECHNUtsAwXasDEwMAC1W-KnCo3s-CjY9M2Oo4gK5WeVHXXiOSN2Cx6UiadLGqLFuK38lUJ3-5RKfss_W-GAzVfTRKZFWj7rXphcRSJubZTINOxw')">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md">
+<h3 class="font-headline-sm text-[20px] text-metallic-highlight">The Hearth Entrance</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- VERIFIED TESTIMONIALS & CLIENT ENDORSEMENTS -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter w-full">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label text-label text-primary uppercase tracking-widest mb-space-xs block">Endorsements</span>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">Words from the Fellowship</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
 <div>
-<label class="block text-label-md text-on-surface mb-space-xs">Select Date</label>
-<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" id="res-date" type="date" value="2026-06-06"/>
+<div class="flex items-center gap-space-xs text-primary mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
+<p class="font-body-md text-on-surface-variant italic mb-space-lg">"The absolute best coffee in Monastir paired with an unmatched collection of board games. The ambiance transports you straight into another world. The caramel macchiato is legendary!"</p>
+</div>
+<div class="flex items-center gap-space-md pt-space-md border-t border-secondary/10">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold font-label">MB</div>
 <div>
-<label class="block text-label-md text-on-surface mb-space-xs">Select Time Slot</label>
-<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" id="res-time">
-<option>14:00 - Afternoon Session</option>
-<option>17:00 - Evening Game Night</option>
-<option>20:00 - Prime Fellowship Slot</option>
-<option>22:00 - Late Night Campaign</option>
+<h4 class="font-headline-sm text-[16px] text-metallic-highlight">Mehdi Ben Salah</h4>
+<span class="font-body-sm text-on-surface-variant text-[12px]">Boardgame Enthusiast</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface-variant italic mb-space-lg">"A hidden gem right in front of the Faculty of Sciences. Their cold brew is remarkably smooth, and the waffles are pure heaven. Staff are exceptionally welcoming!"</p>
+</div>
+<div class="flex items-center gap-space-md pt-space-md border-t border-secondary/10">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold font-label">ST</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-metallic-highlight">Syrine Trabelsi</h4>
+<span class="font-body-sm text-on-surface-variant text-[12px]">Coffee Connoisseur</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface-variant italic mb-space-lg">"We host our weekly campaign nights here. The atmosphere is so cozy and immersive, and the food quality is consistently top-tier. Highly recommended for groups!"</p>
+</div>
+<div class="flex items-center gap-space-md pt-space-md border-t border-secondary/10">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold font-label">KZ</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-metallic-highlight">Karim Zribi</h4>
+<span class="font-body-sm text-on-surface-variant text-[12px]">Tabletop Gamer</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK RESERVE TABLE ON WHATSAPP HOOK -->
+<section class="py-space-xl max-w-4xl mx-auto px-gutter w-full">
+<div class="bg-surface-card p-space-xl rounded-2xl shadow-2xl relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="text-center max-w-lg mx-auto mb-space-xl">
+<span class="font-label text-label text-primary uppercase tracking-widest mb-space-xs block">Instant Booking</span>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight mb-space-sm">Reserve Your Table</h2>
+<p class="font-body-md text-on-surface-variant">Select your preferred date, time, and fellowship size to trigger an instant WhatsApp reservation to +216 27 954 991.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg" id="reservation-form" onsubmit="handleReservation(event)">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label text-label text-on-surface-variant">Date</label>
+<input class="bg-deep-background text-metallic-highlight px-space-md py-space-sm rounded-lg border border-secondary/20 focus:border-metallic-highlight outline-none transition-colors" id="res-date" required="" type="date"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label text-label text-on-surface-variant">Time</label>
+<select class="bg-deep-background text-metallic-highlight px-space-md py-space-sm rounded-lg border border-secondary/20 focus:border-metallic-highlight outline-none transition-colors" id="res-time" required="">
+<option value="14:00">02:00 PM</option>
+<option selected="" value="16:00">04:00 PM</option>
+<option value="18:00">06:00 PM</option>
+<option value="20:00">08:00 PM</option>
+<option value="21:30">09:30 PM</option>
 </select>
 </div>
-<div>
-<label class="block text-label-md text-on-surface mb-space-xs">Table Preference</label>
-<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" id="res-table">
-<option>Cozy Corner Booth (Up to 4 players)</option>
-<option>Grand Strategy Long Table (Up to 8 players)</option>
-<option>Bar Counter Seating (Solo / Duo)</option>
-<option>Window View Table</option>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label text-label text-on-surface-variant">Guests</label>
+<select class="bg-deep-background text-metallic-highlight px-space-md py-space-sm rounded-lg border border-secondary/20 focus:border-metallic-highlight outline-none transition-colors" id="res-guests" required="">
+<option value="2 Guests">2 Fellowship (2 Guests)</option>
+<option selected="" value="4 Guests">4 Adventurers (4 Guests)</option>
+<option value="6 Guests">Party of 6</option>
+<option value="8+ Guests">Large Guild (8+ Guests)</option>
 </select>
 </div>
-<button class="w-full mt-space-sm bg-secondary text-on-secondary py-space-md rounded-lg font-label-md hover:bg-secondary-fixed transition-all flex items-center justify-center gap-space-xs shadow-lg" onclick="triggerWhatsAppReservation()">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-          Reserve Table on WhatsApp
+</form>
+<div class="text-center">
+<button class="bg-primary text-on-primary font-label text-label uppercase px-space-xl py-space-md rounded-lg hover:bg-primary-fixed transition-all shadow-xl inline-flex items-center gap-space-xs" onclick="handleReservation(event)" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          Send Reservation via WhatsApp
         </button>
 </div>
 </div>
 </section>
-<!-- Interactive Script for WhatsApp Reservation -->
+<!-- UNIFIED LUXURY FOOTER DETAILS -->
+<footer class="bg-surface-container-lowest py-space-xl mt-space-xl">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-xl mb-space-xl">
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<span class="material-symbols-outlined text-primary text-headline-sm">local_cafe</span>
+<span class="font-headline-lg text-headline-sm text-primary tracking-wider uppercase">The Hobbit</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">Your cozy geek and boardgame sanctuary in the heart of Monastir, Tunisia. Exceptional coffee, legendary treats, and epic fellowship.</p>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-metallic-highlight mb-space-md">Location</h4>
+<p class="font-body-sm text-on-surface-variant flex items-start gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span>
+          En face de la Faculté des Sciences, 5000 Monastir, Tunisia
+        </p>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-metallic-highlight mb-space-md">Hours of Sanctuary</h4>
+<p class="font-body-sm text-on-surface-variant flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+          Monday - Sunday: 8:00 AM - 11:30 PM
+        </p>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-metallic-highlight mb-space-md">Connect</h4>
+<p class="font-body-sm text-on-surface-variant flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+          +216 27 954 991
+        </p>
+<div class="flex items-center gap-space-md mt-space-md">
+<a class="w-10 h-10 rounded-full bg-surface-card flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-card flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
 <script>
-    function triggerWhatsAppReservation() {
-      const date = document.getElementById('res-date').value;
+    function handleReservation(e) {
+      e.preventDefault();
+      const date = document.getElementById('res-date').value || new Date().toISOString().split('T')[0];
       const time = document.getElementById('res-time').value;
-      const table = document.getElementById('res-table').value;
+      const guests = document.getElementById('res-guests').value;
       
-      const message = encodeURIComponent(`Hello! I would like to reserve a table at The Hobbit Coffee Shop.\nDate: ${date}\nTime: ${time}\nPreference: ${table}`);
-      const whatsappUrl = `https://wa.me/21627954991?text=${message}`;
-      
-      window.open(whatsappUrl, '_blank');
+      const message = `Hello The Hobbit, I would like to reserve a table for ${guests} on ${date} at ${time}.`;
+      const encoded = encodeURIComponent(message);
+      window.open(`https://wa.me/21627954991?text=${encoded}`, '_blank');
     }
+
+    // Set default date input to today
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('res-date');
+      if (dateInput) {
+        dateInput.value = new Date().toISOString().split('T')[0];
+      }
+    });
   </script>
-</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-space-xl text-on-surface-variant text-body-sm"><div><h4 class="font-headline-sm text-on-surface mb-space-sm">The Hobbit Coffee Shop</h4><p>En face de la Faculté des Sciences, 5000 Monastir, Tunisia</p></div><div><h4 class="font-headline-sm text-on-surface mb-space-sm">Operational Hours</h4><p>Monday - Sunday: 08:00 AM - 00:00 AM</p><p>Hotline: +216 27 954 991</p></div><div><h4 class="font-headline-sm text-on-surface mb-space-sm">Connect With Us</h4><div class="flex gap-space-md mt-space-sm"><a class="hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">globe</span></a><a class="hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a><a class="hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a></div></div></div><div class="max-w-7xl mx-auto px-gutter mt-space-xl pt-space-md border-t border-outline-variant/20 text-center text-label-sm text-on-surface-variant">© 2024 The Hobbit Coffee Shop. All rights reserved.</div></footer>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-body-sm"><div>© The Hobbit Coffee Shop. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="tel:+21627954991">+216 27 954 991</a></div></div></footer>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");

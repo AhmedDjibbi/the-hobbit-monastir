@@ -1,279 +1,263 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"secondary-fixed-dim": "#6bd8cb", "on-secondary": "#003732", "primary-fixed-dim": "#bec6e0", "on-secondary-fixed-variant": "#005049", "background": "#0f131d", "surface-container-low": "#171b26", "on-secondary-container": "#00302b", "outline": "#909097", "on-tertiary-fixed-variant": "#653e00", "surface-dim": "#0f131d", "primary-fixed": "#dae2fd", "on-error-container": "#ffdad6", "secondary-container": "#29a195", "secondary-fixed": "#89f5e7", "inverse-surface": "#dfe2f1", "surface-container-high": "#262a35", "outline-variant": "#45464d", "inverse-primary": "#565e74", "on-background": "#dfe2f1", "on-tertiary-fixed": "#2a1700", "on-error": "#690005", "on-primary-container": "#798098", "tertiary": "#ffb95f", "on-primary-fixed": "#131b2e", "inverse-on-surface": "#2c303b", "secondary": "#6bd8cb", "on-tertiary-container": "#b47300", "primary-container": "#0f172a", "tertiary-fixed-dim": "#ffb95f", "surface-container-lowest": "#0a0e18", "surface-tint": "#bec6e0", "surface-variant": "#313540", "surface-bright": "#353944", "on-primary-fixed-variant": "#3f465c", "on-tertiary": "#472a00", "surface": "#0f131d", "tertiary-fixed": "#ffddb8", "on-secondary-fixed": "#00201d", "on-surface-variant": "#c6c6cd", "on-surface": "#dfe2f1", "error": "#ffb4ab", "on-primary": "#283044", "error-container": "#93000a", "primary": "#bec6e0", "surface-container-highest": "#313540", "surface-container": "#1c1f2a", "tertiary-container": "#251400"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin": "2rem"}, "fontFamily": {"headline-lg": ["EB Garamond"], "headline-sm": ["EB Garamond"], "headline-xl": ["EB Garamond"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["EB Garamond"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"]}, "fontSize": {"headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}], "headline-sm": ["22px", {"lineHeight": "28px", "fontWeight": "500"}], "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#131319", "primary-container": "#806148", "tertiary": "#cdc5bc", "on-primary-container": "#ffe1cc", "on-background": "#e4e1e9", "on-surface": "#e4e1e9", "outline": "#9c8e85", "tertiary-container": "#6c665e", "surface-container-high": "#2a2930", "on-error": "#690005", "primary-fixed": "#ffdcc2", "secondary-fixed": "#f3dfcc", "primary": "#e6bfa1", "surface-bright": "#39383f", "on-primary-fixed-variant": "#5c412a", "on-tertiary-fixed": "#1f1b15", "surface-container-highest": "#35343a", "on-tertiary-container": "#eee5db", "surface": "#131319", "tertiary-fixed": "#eae1d7", "error": "#ffb4ab", "outline-variant": "#4f453d", "error-container": "#93000a", "on-tertiary-fixed-variant": "#4b463f", "secondary-container": "#524436", "surface-variant": "#35343a", "on-secondary-fixed": "#241a0e", "primary-fixed-dim": "#e6bfa1", "on-primary-fixed": "#2b1704", "surface-tint": "#e6bfa1", "on-primary": "#432b16", "secondary-fixed-dim": "#d6c3b1", "background": "#131319", "on-error-container": "#ffdad6", "secondary": "#d6c3b1", "surface-container-lowest": "#0e0e13", "on-secondary-container": "#c4b2a0", "surface-container": "#1f1f25", "surface-container-low": "#1b1b21", "on-surface-variant": "#d3c4ba", "inverse-primary": "#765840", "inverse-on-surface": "#303036", "on-secondary-fixed-variant": "#524436", "tertiary-fixed-dim": "#cdc5bc", "on-secondary": "#3a2e21", "on-tertiary": "#343029", "inverse-surface": "#e4e1e9" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.375rem", "space-xl": "4rem", "gutter": "1.5rem", "space-lg": "2.5rem", "space-md": "1.5rem", "space-sm": "0.75rem", "margin": "2rem" }, "fontFamily": { "headline-lg": ["Cormorant Garamond"], "headline-md": ["Cormorant Garamond"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Cormorant Garamond"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Cormorant Garamond"] }, "fontSize": { "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
     body {
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><button aria-label="Menu" class="w-12 h-12 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined">menu</span></button><span class="font-headline-sm text-on-surface tracking-wide uppercase">The Hobbit Coffee</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface bg-surface">
-<!-- 1. Hero Section -->
-<section class="relative w-full h-[751px] flex flex-col justify-end p-gutter pb-space-xl overflow-hidden rounded-b-xl">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="A warm, dimly lit fantasy-inspired coffee shop interior in Monastir at twilight, featuring rustic dark wood tables, shelves lined with leather-bound board games and glowing amber lanterns, creating a cozy and magical sanctuary atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWss_Xe9BblX8e0_SSx7_0RnAEtl6L3GGZSkRNZn-z97UDzaYAROQBSKaw_K_Y6lvwpX6CIXAzHvcMu3DSxjcWnf6VqdH0VIX2lhi_M-NVRXZhRnTJQSToXI5W3gk0FN3wJMqPojYmYvVcFsbCaESd6kQklpC_L5h8erD-XX2-AdIa5Pl7MbzNhir7p1Udd-x8JPyFyy5SB_9PnfrflsLXbmlkwDyMjpmdLR3-9Hd2Ygemjf_cpfKiu0I8UGJmS5M7ype21Jr5eUg')"></div>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-primary tracking-wide">The Hobbit</span></div><div class="flex items-center gap-space-sm"><a class="flex items-center justify-center w-11 h-11 rounded-full bg-primary-container text-on-primary-container" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full h-[751px] min-h-[600px] flex flex-col justify-end p-gutter pb-space-lg overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center z-0" data-alt="A warm, atmospheric interior of The Hobbit Coffee Shop in Monastir showing rustic wooden tables, dim hearth lighting, bookshelves filled with board games, and cozy geek-chic decor." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAp2G3DnjPzAaAspcLJacYeokIe2c2MEItdoMpIIE7fM1Qv0dGcHB5x9iPcydLdjB0fqBfpeak20ZhcjVBvXtnUVikdWTJvxnzqwVCNO3Qaq_lod95cy7En0HxMhmgJ9Ygl7UaOVVybq_CMDTtokt3-PrLK8xbtbdYaPPU6rbCBim__h8lPUVhrM1-KNV_TTy2bTfcKwfKqltiDXWXnROntlCfzqmKgQ-4zKthb-NLW-tR8tayK0og1XiofvOlXlS7ISY153qJ2pg')"></div>
     <!-- ENFORCED SUBTLE BOTTOM FADE -->
-    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #0B0F19 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #010103 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
     
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
-<div class="relative z-10 flex flex-col gap-space-md">
-<div class="self-start inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-tertiary-container/80 text-tertiary border border-tertiary/20 backdrop-blur-md">
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">award_star</span>
-<span class="text-label-sm uppercase tracking-wider font-label-md">Award of Excellence 2026</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent z-10"></div>
+<div class="relative z-20 flex flex-col items-start gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container text-label-md shadow-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span>Award of Excellence 2026</span>
 </div>
-<div class="flex flex-col gap-space-xs">
-<h1 class="font-headline-lg text-headline-lg-mobile text-on-surface">The Hobbit Coffee Shop</h1>
-<p class="font-body-md text-on-surface-variant">Cozy Geek &amp; Boardgame Sanctuary in Monastir</p>
-</div>
-<div class="flex flex-row gap-space-sm pt-space-sm">
-<a class="flex-1 flex items-center justify-center gap-space-xs py-space-md px-space-md rounded-xl bg-tertiary text-on-tertiary font-label-md shadow-lg transition-all active:scale-95" href="#reserve">
-<span class="material-symbols-outlined text-[18px]">event_seat</span>
-<span>Reserve Table</span>
-</a>
-<a class="flex-1 flex items-center justify-center gap-space-xs py-space-md px-space-md rounded-xl bg-surface-container-high text-on-surface font-label-md backdrop-blur-md border border-outline-variant/30 transition-all active:scale-95" href="#menu">
-<span class="material-symbols-outlined text-[18px]">coffee</span>
-<span>Explore Menu</span>
+<h1 class="font-headline-lg text-primary tracking-tight">The Hobbit Coffee Shop</h1>
+<p class="font-body-md text-on-surface-variant max-w-sm">Cozy Geek &amp; Boardgame Sanctuary in Monastir. Step into Middle-earth for exceptional specialty brews and legendary table fellowship.</p>
+<div class="flex items-center gap-space-sm w-full mt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-3 px-space-md rounded-xl bg-primary text-on-primary font-body-md font-semibold transition-transform active:scale-95 shadow-xl" href="https://wa.me/21627954991?text=Hello%20The%20Hobbit,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Reserve on WhatsApp</span>
 </a>
 </div>
 </div>
 </section>
-<!-- 2. Brand Narrative / Distinctive Value -->
-<section class="flex flex-col px-gutter py-space-xl gap-space-lg">
-<div class="flex flex-col gap-space-xs text-center">
-<span class="text-label-sm uppercase tracking-widest text-secondary">The Sanctuary Experience</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Crafted for Adventurers</h2>
+<!-- 2. BRAND NARRATIVE / DISTINCTIVE VALUE -->
+<section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-sm text-primary uppercase tracking-widest">Our Fellowship</span>
+<h2 class="font-headline-md text-on-surface">Where Epic Tales Meet Exceptional Brews</h2>
+<p class="font-body-md text-on-surface-variant">Nestled right in front of the Faculty of Sciences in Monastir, The Hobbit is more than a café—it's a portal to warmth, camaraderie, and crafted indulgence.</p>
 </div>
-<div class="flex flex-col gap-space-md">
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low transition-all">
-<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center mb-space-md">
-<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">fireplace</span>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">coffee</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Immersive Atmosphere</h3>
-<p class="font-body-sm text-on-surface-variant">Step away from the mundane. Our lounge offers warm lighting, medieval woodwork, and quiet nooks designed for deep conversations and epic campaigns.</p>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-on-surface">Craft Specialty Coffee</h3>
+<p class="font-body-sm text-on-surface-variant">Meticulously sourced beans, roasted to golden perfection and brewed with artisanal precision.</p>
 </div>
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low transition-all">
-<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 text-tertiary flex items-center justify-center mb-space-md">
-<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Artisanal Craft</h3>
-<p class="font-body-sm text-on-surface-variant">Every brew is a potion mastered. From 18-hour cold drips to velvety lattes, we source premium beans to fuel your quests and study sessions.</p>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">casino</span>
 </div>
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low transition-all">
-<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center mb-space-md">
-<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-on-surface">Immersive Boardgame Library</h3>
+<p class="font-body-sm text-on-surface-variant">Over 150 strategy, cooperative, and casual tabletop games ready for your next fellowship quest.</p>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Community &amp; Boardgaming</h3>
-<p class="font-body-sm text-on-surface-variant">Explore our curated library of over 200 tabletop games. Whether you are a seasoned strategist or a curious beginner, a table awaits you.</p>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-on-surface">Artisan Bakery &amp; Savory Bites</h3>
+<p class="font-body-sm text-on-surface-variant">Freshly baked pastries, loaded waffles, and hearty gourmet sandwiches fit for hungry travelers.</p>
+</div>
 </div>
 </div>
 </section>
-<!-- 3. Flagship Culinary Tastings & Menus Grid -->
-<section class="flex flex-col px-gutter py-space-xl gap-space-lg bg-surface-container-lowest rounded-3xl" id="menu">
+<!-- 3. FLAGSHIP CULINARY TASTINGS & MENUS GRID -->
+<section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface-dim">
 <div class="flex flex-col gap-space-xs">
-<span class="text-label-sm uppercase tracking-widest text-tertiary">Tavern Menu</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Flagship Tastings</h2>
+<span class="text-label-sm text-primary uppercase tracking-widest">Tavern Specials</span>
+<h2 class="font-headline-md text-on-surface">Flagship Culinary Tastings</h2>
 </div>
 <div class="flex flex-col gap-space-md">
 <!-- Item 1 -->
-<div class="flex flex-col p-space-md rounded-xl bg-surface-container transition-all gap-space-md">
-<div class="flex gap-space-md items-center">
-<div class="w-20 h-20 rounded-lg bg-cover bg-center flex-shrink-0" data-alt="A close-up shot of a gourmet caramel macchiato in a ceramic mug, showing layered steamed milk, dark espresso streaks, and a rich golden lattice of salted caramel drizzle on top." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAB_gDto-9wCPTjhXA6YTSzdPbfzJtQc9nfCVtD7fKwFU9KxPosBcVUNYQ6ZiARoGHctZ_KEZVkNClSrs30p7OGDHql2FG39ltIYcOeAC_BkmdhErcROC-6761XK8w5DaALkGhgLE4g_1C4tp5awS0T58NCu1IVajan7uLBpN-DWfqIukevK-USxO03bQlCN6nxxzGayY8G5JZGmGiY4TmCrotiZlrAA1ifSbIvcaVe2ix4deeApPGAcW7NRriCJOnNjZDu0zI-bEY')"></div>
-<div class="flex flex-col flex-grow min-w-0">
+<div class="flex flex-col rounded-xl bg-surface-container overflow-hidden">
+<div class="w-full h-40 bg-cover bg-center" data-alt="A close-up shot of The Shire Signature Caramel Macchiato with rich espresso layers, velvety microfoam, and golden caramel drizzle in a rustic ceramic mug." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDigymh6xueJnOIXX9m8YBTOUerDvn5aYMkVZmXzxioQtC0xKDP3eHFGgJBE75razetNnuohmc3tAZvOjZCtoyF0cTe_DOqxD5INjC3Fu_zH548b-kZS68jAkGkpg2TwlPxk5xf3-SIS7dhQrunpB24jDQCoG9Y_v59ZwywKUvIKCjm7j54pUcz-L1jTG0X0iXbfQr_dhS33UKEyCkIbmX9TcJx5z_fUMNBh2yYWVldaTfVT_r_vim95jSHT2fYMJGvvgT2fJdV8XY')"></div>
+<div class="p-space-md flex flex-col gap-space-xs">
 <div class="flex justify-between items-start">
-<span class="text-label-sm text-secondary uppercase tracking-wider">Specialty Brews</span>
-<span class="font-label-md text-tertiary font-bold">6.5 TND</span>
+<h3 class="font-headline-sm text-on-surface">The Shire Signature Caramel Macchiato</h3>
+<span class="font-body-lg text-primary font-semibold">6.5 TND</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">The Shire Caramel Macchiato</h3>
-<span class="text-body-sm text-on-surface-variant">Artisanal Brew</span>
-</div>
-</div>
-<p class="font-body-sm text-on-surface-variant">Double espresso pulled over velvety steamed milk, infused with house-made vanilla syrup and drizzled with buttery salted caramel.</p>
-<a class="flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container/20 text-secondary hover:bg-secondary-container/40 transition-colors font-label-md" href="https://wa.me/21627954991?text=Hi!%20I%20would%20like%20to%20order%20The%20Shire%20Caramel%20Macchiato." target="_blank">
-<span class="material-symbols-outlined text-[18px]">chat</span>
+<p class="font-body-sm text-on-surface-variant">Rich espresso balanced with steamed milk, Madagascar vanilla, and buttery caramel ribbons.</p>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md" href="https://wa.me/21627954991?text=Hello,%20I%20would%20like%20to%20order%20The%20Shire%20Signature%20Caramel%20Macchiato." target="_blank">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
 <span>Order via WhatsApp</span>
 </a>
+</div>
 </div>
 <!-- Item 2 -->
-<div class="flex flex-col p-space-md rounded-xl bg-surface-container transition-all gap-space-md">
-<div class="flex gap-space-md items-center">
-<div class="w-20 h-20 rounded-lg bg-cover bg-center flex-shrink-0" data-alt="A tall glass of dark amber cold brew coffee topped with a thick, velvety layer of bright white Madagascar vanilla sweet cream foam, garnished with coffee grounds." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBv4qOH7SDXrHPjVdzlBB65xms7ViE3l5JgOia59TcnQG7HkaQngMNX1lZQpjOhxyVc8WYlCFjJUzAhhL_RMMX2LxDvJ2L8iuM6s5w0vxDGRJi1mSzdyWZ97L7XinNcOG0rEj632zeOw84MLSd_6_jaWGDZR11dmKwE0m7o9wEUM5WBy04-M9PjyyaROLEdXIjJpzHm9-s4lLGLopSvCDVzw6HgnO3B7nFDCbBCpafZ3POHzkTHhq4IprHr1foMBiw4KpnfwlBo5H0')"></div>
-<div class="flex flex-col flex-grow min-w-0">
+<div class="flex flex-col rounded-xl bg-surface-container overflow-hidden">
+<div class="w-full h-40 bg-cover bg-center" data-alt="A tall glass of Mithril Cold Brew topped with thick cold vanilla sweet cream foam, illuminated by soft amber lighting against a dark wooden table." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHfKaj9tdkOwOh7UaXZDjMuMFnJdMsvULZPosF5d6u9yHt64c91jWTVYXpOCxjqHhiAgGquKPBH_0RqaFk_m41rb83-YTaMv3FcXewewvj9cfBDuvM1L5IX6InMqc7ZDiS2vNAL5iAzSg3M0slj-pQmOoS50pEDvFM4XjXwhCecOBoSN2ISafMlNLqG30houpIYROTq7WMQ-Q1WA7m_D6ERHFpyOKGZbPSID3vniMDfXc4PoCHp76pFzqGoe4YsKdDswiN_0WKcxs')"></div>
+<div class="p-space-md flex flex-col gap-space-xs">
 <div class="flex justify-between items-start">
-<span class="text-label-sm text-secondary uppercase tracking-wider">Signature Coffees</span>
-<span class="font-label-md text-tertiary font-bold">7.0 TND</span>
+<h3 class="font-headline-sm text-on-surface">Mithril Cold Brew &amp; Vanilla Foam</h3>
+<span class="font-body-lg text-primary font-semibold">7.0 TND</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Mithril Cold Brew &amp; Vanilla Foam</h3>
-<span class="text-body-sm text-on-surface-variant">18h Slow Drip</span>
-</div>
-</div>
-<p class="font-body-sm text-on-surface-variant">Slow-steeped single-origin Arabica cold brew crowned with silky, aerated sweet Madagascar vanilla cream.</p>
-<a class="flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container/20 text-secondary hover:bg-secondary-container/40 transition-colors font-label-md" href="https://wa.me/21627954991?text=Hi!%20I%20would%20like%20to%20order%20Mithril%20Cold%20Brew%20%26%20Vanilla%20Foam." target="_blank">
-<span class="material-symbols-outlined text-[18px]">chat</span>
+<p class="font-body-sm text-on-surface-variant">Slow-steeped 18-hour cold brew crowned with a glistening cloud of sweet vanilla cold foam.</p>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md" href="https://wa.me/21627954991?text=Hello,%20I%20would%20like%20to%20order%20Mithril%20Cold%20Brew%20%26%20Vanilla%20Foam." target="_blank">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
 <span>Order via WhatsApp</span>
 </a>
+</div>
 </div>
 <!-- Item 3 -->
-<div class="flex flex-col p-space-md rounded-xl bg-surface-container transition-all gap-space-md">
-<div class="flex gap-space-md items-center">
-<div class="w-20 h-20 rounded-lg bg-cover bg-center flex-shrink-0" data-alt="A golden brown crispy Belgian waffle smothered in generous glossy streams of chocolate hazelnut spread, topped with chopped green pistachios and fresh sliced bananas." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHVJ3IIGGdNfOL0b0jHIJxp1_PrglvA799wrZZe8FfrdmABE8vcoqicbTo0RrxrZEKGkp-J-FTchcm4aSjYmZh4CIOKuzVsLI4zGu0ubK9yy1WGvzkCohBVtcSpM_C74EoIwIFWdAcsAnP6qc829O0frJXd62ksS1OU3W70F0Yp3dIAmXgeKzac6kUi3kFQoUueuU2a017F0bNWkuzRZVk7JANBoPNKt9Xx3jLGyjrTFZyFo_EOfbFES6KkT20PHxBQObz--bVn2k')"></div>
-<div class="flex flex-col flex-grow min-w-0">
+<div class="flex flex-col rounded-xl bg-surface-container overflow-hidden">
+<div class="w-full h-40 bg-cover bg-center" data-alt="A freshly baked golden waffle piled high with premium Nutella hazelnut spread, sliced bananas, and crunchy roasted hazelnuts." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCNOhsKnTxSzF4R0WTSG1MuiI2-S3FbEFLWKMyq-0o1wxq8kKnF_hkZMy6OvSC_XaNkwIgcVZpqkhA1EwppjK2eqXzCbId6Q9vHv-lUbiqA2DXXC0TC6PBBNFz80gyXC8zkgu1oFLHF_HY2aBatLK_wHWfiwtuqDImI0JFWNpoUebzR6yWUt_uHCBVr9yeOWKM_hH2XiA5PDuDOOHtDKOiOLAhwt5C9256IOCgTicKMPYrZToZiOXVHGg1lbNiXjcfue-Fv28V1ac')"></div>
+<div class="p-space-md flex flex-col gap-space-xs">
 <div class="flex justify-between items-start">
-<span class="text-label-sm text-secondary uppercase tracking-wider">Gourmet Bakery</span>
-<span class="font-label-md text-tertiary font-bold">9.5 TND</span>
+<h3 class="font-headline-sm text-on-surface">Lembas Fresh Waffle &amp; Nutella Mountain</h3>
+<span class="font-body-lg text-primary font-semibold">9.5 TND</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Lembas Fresh Waffle &amp; Nutella</h3>
-<span class="text-body-sm text-on-surface-variant">Freshly Baked</span>
-</div>
-</div>
-<p class="font-body-sm text-on-surface-variant">Crispy golden Belgian waffle loaded with warm melted hazelnut cocoa cream, crushed pistachios, and fresh banana slices.</p>
-<a class="flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container/20 text-secondary hover:bg-secondary-container/40 transition-colors font-label-md" href="https://wa.me/21627954991?text=Hi!%20I%20would%20like%20to%20order%20Lembas%20Fresh%20Waffle." target="_blank">
-<span class="material-symbols-outlined text-[18px]">chat</span>
+<p class="font-body-sm text-on-surface-variant">Crispy golden artisanal waffle smothered in generous waves of authentic Nutella and crushed nuts.</p>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md" href="https://wa.me/21627954991?text=Hello,%20I%20would%20like%20to%20order%20Lembas%20Fresh%20Waffle." target="_blank">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
 <span>Order via WhatsApp</span>
 </a>
+</div>
 </div>
 <!-- Item 4 -->
-<div class="flex flex-col p-space-md rounded-xl bg-surface-container transition-all gap-space-md">
-<div class="flex gap-space-md items-center">
-<div class="w-20 h-20 rounded-lg bg-cover bg-center flex-shrink-0" data-alt="A toasted sesame seed bagel filled with folded layers of pink smoked turkey, melted golden gouda cheese, vibrant green baby spinach, and creamy herb cheese spread." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeAr-2xWfP0d9l0K5NLmm7KaSHo-3D8RExh9ESyiRT7NPN7aXky97NM0YdJHPMD_Z7xz4Qkip3YScsC3YQE7T7Wf7EzkksLJPfMysAX3MDh5g2nQstHE47kkkTpc0MCDlBkLeELRtpDMbhIT62Nb-PR9-FmlT8z3-ISg9hlyl1wAx5g1wK0M25Y6mJRfeajbIrZJCBHfKw33NfIqDu8otws9Kn3sB_CPRLHr1OvgiUZ1u0_kFe2gBwgLng5s13wd1sjVHjwNAS_ZM')"></div>
-<div class="flex flex-col flex-grow min-w-0">
+<div class="flex flex-col rounded-xl bg-surface-container overflow-hidden">
+<div class="w-full h-40 bg-cover bg-center" data-alt="A toasted artisan bagel filled with smoked turkey breast, melted emmental cheese, fresh crisp lettuce, and signature herb spread." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDY5sY8p5sIPdjuekCQu-gZ1QpdEx1yVcEjDW9sL0QajjnSOZkTpUw_GkB2afZpYrKo4bEUokM9YL-RRbINQ63RjQXle-2MZTK0vi9BeL3Y_r3p5f1GrFJeMRtoufHckrbiil6I1oavzzjYeRmDkdZZ9fS0xyy-wjnNU35RPxnNaNvzOE-iTVorYmecufrFXhOrHP-MPsteyg_7RlrJyxnfJsCSE9aKHO8mT7go_G-ydcUxt3q8UE_4K8Oei8p9JjcflNRBOkiHBg')"></div>
+<div class="p-space-md flex flex-col gap-space-xs">
 <div class="flex justify-between items-start">
-<span class="text-label-sm text-secondary uppercase tracking-wider">Savory Bites</span>
-<span class="font-label-md text-tertiary font-bold">8.5 TND</span>
+<h3 class="font-headline-sm text-on-surface">Rivendell Smoked Turkey &amp; Cheese Bagel</h3>
+<span class="font-body-lg text-primary font-semibold">8.5 TND</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Rivendell Smoked Turkey Bagel</h3>
-<span class="text-body-sm text-on-surface-variant">Toasted Fresh</span>
-</div>
-</div>
-<p class="font-body-sm text-on-surface-variant">Artisan toasted sesame bagel packed with premium smoked turkey, melted gouda, fresh baby spinach, and herbed cream cheese.</p>
-<a class="flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container/20 text-secondary hover:bg-secondary-container/40 transition-colors font-label-md" href="https://wa.me/21627954991?text=Hi!%20I%20would%20like%20to%20order%20Rivendell%20Smoked%20Turkey%20Bagel." target="_blank">
-<span class="material-symbols-outlined text-[18px]">chat</span>
+<p class="font-body-sm text-on-surface-variant">Warm toasted bagel layered with tender smoked turkey, melted cheese, and crisp garden greens.</p>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md" href="https://wa.me/21627954991?text=Hello,%20I%20would%20like%20to%20order%20Rivendell%20Smoked%20Turkey%20%26%20Cheese%20Bagel." target="_blank">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
 <span>Order via WhatsApp</span>
 </a>
 </div>
 </div>
+</div>
 </section>
-<!-- 4. Curated Visual Showcase -->
-<section class="flex flex-col px-gutter py-space-xl gap-space-lg">
-<div class="flex flex-col gap-space-xs text-center">
-<span class="text-label-sm uppercase tracking-widest text-secondary">Atmosphere &amp; Craft</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Visual Showcase</h2>
+<!-- 4. CURATED VISUAL SHOWCASE (BENTO GRID) -->
+<section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-sm text-primary uppercase tracking-widest">Atmosphere</span>
+<h2 class="font-headline-md text-on-surface">Sanctuary Views</h2>
 </div>
 <div class="grid grid-cols-2 gap-space-sm">
-<div class="w-full h-44 rounded-xl bg-cover bg-center" data-alt="A group of friends laughing and playing a complex strategy board game on a large wooden table inside the Monastir coffee shop, illuminated by warm overhead pendant lights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhSoaLcshooFJINW-PtyJF23-y8sYukbhA96mCTwvAdg6uinMRBXeQgIlVovs48waAvF4s0uD0nMqqTo50WQDE77SXI6FN1YgkazJm1FdJS0fE8I7dLdUji6xlatCG6QsO96BoNRcCjyXx0O-fY_DFrM21U0UbSijdL-axIKn_yOUwdbHmZ1iuLVkOVn6Z2gNNbtoppzAPpt2GlY02F-5xb0By99h1C6R_Vw3Qadek7o60lWIk7ihKn2WLlh8BlOcO57AptxnkMbA')"></div>
-<div class="w-full h-44 rounded-xl bg-cover bg-center" data-alt="A close-up of a barista carefully pouring steamed milk into a ceramic cup to create intricate latte art resembling a dragon's wing." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaal3CcXobYJaMOFhDVVNDZFJI0N4Icpdy3zuM-EP9Aliz525pQlgLfHkjkJLsdlbIZHFWwJlEPlXN3VelP-CCNsLSrxO7bl-4uuV9_ZQqX501fpR9rMLSEC-aWPj-q4BjE-FvcvmjCWsAkHueRGr85RwilZWFySNg6uS8LnRu5yWZTZOeHCAb0yGT7JubFBsveA07AXvh2XcMYliZf0UFgSeozr3xRFXHMc5oEsq86I14JAt9Tjf44VMoGFTrQpUubAIhguhCuD4')"></div>
-<div class="col-span-2 w-full h-36 rounded-xl bg-cover bg-center" data-alt="Shelves packed with hundreds of colorful board game boxes, rulebooks, and miniature figurines displayed along a rustic dark brick wall inside the lounge." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTj8Cg8fRT75Q2InsoosDo9aH5pt1HUYmJLH-sjMcGuWnieuDcLR004-VUaxh_c1C93VPltHI2xEHSgFoXHdAcx1c8u85cRMcjE5i0G_XRr8fSXZrINXLMzbUccoA3DlEpo8putQbtOZLKUaeSavS_lJZSrF8LTghvU9Pes3frJUKZhorQMy-GJGWBYyPCQJPsn0LUMOsyHQ-MRLOr2rKUDKXzikWNCRA20wGLeszpCgm5YgosJ87hYCEDe75vo2l1EasmpFtwn44')"></div>
+<div class="col-span-2 h-56 rounded-xl bg-cover bg-center overflow-hidden shadow-md" data-alt="Wide panoramic view of The Hobbit Coffee Shop interior in Monastir showing rustic wooden communal tables surrounded by geek memorabilia and warm lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA25G7uyv7ddC6RSPBZ4oCYO1S0ckncATSl80HFrmHZq36YlCix0sjIF1vcK84sLZuX9fc1EhGGj-Y3sZoStvXFD5pDaRkxR7KLIxPXymAVPX6EKW5DlWMDv1XrB_3uZ2VFcHZLYa1JXCfCgvAY24YQ4e8xb6hjgROpdNzjTAMinUYIi8a9NULpL-0-GHrwqCz3kJNhyaopkyOYAxH08Wn1-8Si-0JC47e5ymkFFX0AjfGIuoZmkr_pto2UUNsPhkZrjmgcmL66DvA')"></div>
+<div class="col-span-1 h-36 rounded-xl bg-cover bg-center overflow-hidden shadow-md" data-alt="Close-up of specialty coffee preparation equipment and artisan mugs on a rustic wooden counter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDtdLl7WOYJUN9uYGzxyJGeKXQygYpPMqwxACGKgNt6701toOlgunvYcMpmmD92wV8c6Ermf_BtZAeFHLxBYL6LXV28Q9QMyK-T-lyPJNHJonRxXS1Io3k_N8V16GjKEgke7s8hkKV7pHO7NcJL-j-musxLCKiLwNxZFOYR5ffbq1GL1egWHHpbYs7ExV0mdxuL4OzACKzDKd1h02wqpLBqv7mU34NP29pS51Y50j28OMb_iM89p4K51djjwegTzkUzbFlNLLO4ds')"></div>
+<div class="col-span-1 h-36 rounded-xl bg-cover bg-center overflow-hidden shadow-md" data-alt="Cozy corner nook with comfortable seating and shelves stacked with board games for patrons." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjRsCnfloSRCdZURRp6PqS1SyUuQ8TeEXPlbSPigcJwwbWcZXLeF6jNoYHDa_HAvb-k9Xz28lF1WJ0l7-BzHyV8-rXNHhc3wOByJ8j9EYLmwSmGKay_ujXHSHTxF3ODxCWO2hohj_FNYhuVSBpLPzFueNMiVt29dpz8aOdO0vVOJk3pdP4VjX3MaHHcryzmlxnhFvVzROSOd2OcBofufueJQXiTq3e186qDp8wHU0STRkZg8PU38siwVCW4-CyBCYhGJuEyNTKTew')"></div>
+<div class="col-span-1 h-36 rounded-xl bg-cover bg-center overflow-hidden shadow-md" data-alt="Detailed shot of artisanal pastry and coffee cup on a wooden table." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCni9fyQoSMaHt8Kko4cPbOv4-Ui1YKmydYJrPkEYQG9ImfzlNhYFznB4FLj-wnzTEN2ncgwYn0lxq2fgbaSYXT_p8Gem4KdnYwbpw61EzgdxDS8eccQzFbS5L_HHEV6BoDXrEY9GsUp_5KqUB98TIxOR7j_pbF6JPs-XUoY0oz_z8TfuzkqosbLLo9ZLc9E9jNxDAHVJD9Tl82nd375-Wyx4qFGhydmJoOc8VB_ra08sd5t8wgfs3vsoJ6IsY9XoKjv0zzP5QA6G8')"></div>
+<div class="col-span-1 h-36 rounded-xl bg-cover bg-center overflow-hidden shadow-md" data-alt="Warm ambient lighting casting a golden glow over board game sessions at The Hobbit." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBLh30h1rN75Soglj1hqZQQJTNkkmUDXu-gIkavFq1hsCg-GMSM57Y5UYYkqDf5zHhNWWtetZvk8bJe4ncsCop0rXfCBKqKYN6IHzt6haHH9plxEUjHIhZReNgWYnpARUeg0f5pj-998MwLtenFUFoBFK5zjHRgVkx8Gmk7eq_smcq8Z6fNDYI0RX8GLhtmcxCvj-rdRULQp9ZFmqqk0DxhcyDGRXorkV2lZX3ZX5WPUBE6VUcuophgAF2_dzdw0BKoRiY7OXjVGw')"></div>
 </div>
 </section>
-<!-- 5. Verified Testimonials & Client Endorsements -->
-<section class="flex flex-col px-gutter py-space-xl gap-space-lg bg-surface-container-low rounded-3xl">
-<div class="flex flex-col gap-space-xs text-center">
-<span class="text-label-sm uppercase tracking-widest text-tertiary">Community Words</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Traveler Tales</h2>
+<!-- 5. VERIFIED TESTIMONIALS -->
+<section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface-dim">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-sm text-primary uppercase tracking-widest">Fellowship Reviews</span>
+<h2 class="font-headline-md text-on-surface">Words from Travelers</h2>
 </div>
-<div class="flex flex-col gap-space-md">
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container gap-space-sm">
-<div class="flex gap-space-xs text-tertiary">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-on-surface italic">"The absolute best spot in Monastir to study and play board games. Their cold brew is unmatched and the staff treats you like family."</p>
-<span class="text-label-sm text-secondary font-bold">— Youssef B., Faculty of Sciences Student</span>
-</div>
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container gap-space-sm">
-<div class="flex gap-space-xs text-tertiary">
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="font-body-sm text-on-surface italic">"An incredible geek sanctuary! Cozy atmosphere, amazing waffles, and we spent hours playing Catan without feeling rushed."</p>
-<span class="text-label-sm text-secondary font-bold">— Mariem K., Board Game Enthusiast</span>
+<p class="font-body-sm text-on-surface italic">"The absolute best coffee in Monastir! The atmosphere is wonderfully nerdy and cozy, perfect for studying or playing board games with friends."</p>
+<span class="font-label-md text-primary font-semibold">— Ahmed B., Faculty of Sciences Student</span>
 </div>
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container gap-space-sm">
-<div class="flex gap-space-xs text-tertiary">
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="font-body-sm text-on-surface italic">"The Shire Caramel Macchiato is my daily potion now. Quiet during the afternoons and lively at night during game nights."</p>
-<span class="text-label-sm text-secondary font-bold">— Ahmed R., Regular Patron</span>
+<p class="font-body-sm text-on-surface italic">"Mithril cold brew is a game changer. Super friendly staff and the boardgame selection is massive. Highly recommended!"</p>
+<span class="font-label-md text-primary font-semibold">— Sarra M., Local Guide</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-on-surface italic">"An oasis of warmth and quality. The Nutella waffle is legendary. Will definitely be coming back every week."</p>
+<span class="font-label-md text-primary font-semibold">— Mehdi K., Boardgame Enthusiast</span>
 </div>
 </div>
 </section>
-<!-- 6. Quick Reserve Table on WhatsApp Hook -->
-<section class="flex flex-col px-gutter py-space-xl gap-space-lg" id="reserve">
-<div class="flex flex-col gap-space-xs text-center">
-<span class="text-label-sm uppercase tracking-widest text-secondary">Book Your Quest</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Reserve a Table</h2>
-</div>
-<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low gap-space-md">
+<!-- 6. QUICK RESERVE TABLE ON WHATSAPP HOOK -->
+<section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface">
 <div class="flex flex-col gap-space-xs">
-<label class="text-label-sm text-on-surface-variant">Select Date</label>
-<input class="w-full p-space-md rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-md" id="res-date" type="date" value="2026-03-30"/>
+<span class="text-label-sm text-primary uppercase tracking-widest">Book Your Spot</span>
+<h2 class="font-headline-md text-on-surface">Reserve Your Table</h2>
+<p class="font-body-sm text-on-surface-variant">Secure your fellowship gathering instantly via WhatsApp.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant">Date</label>
+<input class="w-full p-3 rounded-lg bg-surface-dim text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-date" type="date"/>
 </div>
 <div class="flex flex-col gap-space-xs">
-<label class="text-label-sm text-on-surface-variant">Time Slot</label>
-<select class="w-full p-space-md rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-md" id="res-time">
-<option>14:00 - 16:00 (Afternoon Guild)</option>
-<option>16:30 - 18:30 (Evening Campaign)</option>
-<option>19:00 - 21:00 (Night Quest)</option>
-<option>21:30 - 23:30 (Late Night Tavern)</option>
+<label class="font-label-md text-on-surface-variant">Time Slot</label>
+<select class="w-full p-3 rounded-lg bg-surface-dim text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-time">
+<option>14:00 - Afternoon Brew</option>
+<option>17:00 - Sunset Fellowship</option>
+<option>20:00 - Evening Quest &amp; Boardgames</option>
 </select>
 </div>
 <div class="flex flex-col gap-space-xs">
-<label class="text-label-sm text-on-surface-variant">Seating Area</label>
-<select class="w-full p-space-md rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-md" id="res-area">
-<option>The Shire Fireplace Lounge (Cozy)</option>
-<option>Rivendell Strategy Table (Spacious)</option>
-<option>The Common Room (Brisk &amp; Social)</option>
+<label class="font-label-md text-on-surface-variant">Number of Guests</label>
+<select class="w-full p-3 rounded-lg bg-surface-dim text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-guests">
+<option>2 Travelers (Cozy Booth)</option>
+<option>4 Fellowship Members</option>
+<option>6+ Epic Party</option>
 </select>
 </div>
-<button class="mt-space-sm flex items-center justify-center gap-space-xs py-space-md px-space-md rounded-xl bg-tertiary text-on-tertiary font-label-md shadow-lg transition-all active:scale-95" onclick="bookWhatsApp()">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">chat</span>
-<span>Instant WhatsApp Booking</span>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant">Experience Focus</label>
+<select class="w-full p-3 rounded-lg bg-surface-dim text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-focus">
+<option>Coffee &amp; Chill</option>
+<option>Boardgame Marathon</option>
+<option>Study &amp; Work Session</option>
+</select>
+</div>
+<button class="w-full py-3 px-space-md rounded-xl bg-primary text-on-primary font-body-md font-semibold flex items-center justify-center gap-space-xs shadow-xl active:scale-95 transition-transform mt-space-xs" id="whatsapp-reserve-btn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Send Reservation via WhatsApp</span>
 </button>
 </div>
 </section>
-<!-- 7. Unified Luxury Footer -->
-<footer class="flex flex-col px-gutter py-space-xl gap-space-lg bg-surface-container-lowest text-center items-center rounded-t-3xl">
-<div class="flex flex-col items-center gap-space-xs">
-<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center mb-space-xs">
-<span class="material-symbols-outlined text-[24px]">coffee</span>
+<!-- 7. UNIFIED LUXURY FOOTER -->
+<footer class="w-full px-gutter py-space-lg flex flex-col items-center text-center gap-space-md bg-surface-dim">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-primary">The Hobbit</span>
 </div>
-<span class="font-headline-sm text-on-surface uppercase tracking-wide">The Hobbit Coffee Shop</span>
 <p class="font-body-sm text-on-surface-variant max-w-xs">En face de la Faculté des Sciences, 5000 Monastir, Tunisia</p>
-</div>
 <div class="flex flex-col gap-space-xs text-body-sm text-on-surface-variant">
-<p>Operational Hours: Mon - Sun | 10:00 - 00:00</p>
-<p>Hotline: <a class="text-secondary font-bold" href="tel:+21627954991">+216 27 954 991</a></p>
+<p>Open Daily: 08:00 AM – Midnight</p>
+<p>Phone: +216 27 954 991</p>
 </div>
-<div class="flex gap-space-md text-on-surface">
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-secondary transition-colors" href="#">
-<span class="material-symbols-outlined text-[20px]">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-secondary transition-colors" href="#">
-<span class="material-symbols-outlined text-[20px]">photo_camera</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-secondary transition-colors" href="#">
-<span class="material-symbols-outlined text-[20px]">forum</span>
-</a>
-</div>
-<span class="text-label-sm text-on-surface-variant/60 pt-space-md">© 2026 The Hobbit Coffee Shop. All rights reserved.</span>
+<div class="w-full h-[1px] bg-outline-variant/30 my-space-xs"></div>
+<p class="font-label-sm text-on-surface-variant">© 2026 The Hobbit Coffee Shop. All rights reserved.</p>
 </footer>
 <script>
-    function bookWhatsApp() {
-      const date = document.getElementById('res-date').value;
+    document.getElementById('whatsapp-reserve-btn').addEventListener('click', function() {
+      const date = document.getElementById('res-date').value || 'Today';
       const time = document.getElementById('res-time').value;
-      const area = document.getElementById('res-area').value;
-      const message = `Hi! I would like to reserve a table at The Hobbit Coffee Shop.%0A%0ADate: ${date}%0ATime: ${time}%0AArea: ${area}`;
+      const guests = document.getElementById('res-guests').value;
+      const focus = document.getElementById('res-focus').value;
+
+      const message = `Hello The Hobbit! I would like to reserve a table.%0A- Date: ${date}%0A- Time: ${time}%0A- Guests: ${guests}%0A- Focus: ${focus}`;
       window.open(`https://wa.me/21627954991?text=${message}`, '_blank');
-    }
+    });
   </script>
-</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-around items-center h-20 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 transition-all rounded-xl text-primary bg-surface-container-high" data-path="menu" href="#"><span class="material-symbols-outlined">coffee</span><span class="text-label-sm">Menu</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="orders" href="#"><span class="material-symbols-outlined">receipt_long</span><span class="text-label-sm">Orders</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="locations" href="#"><span class="material-symbols-outlined">map</span><span class="text-label-sm">Locations</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="profile" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-sm">Profile</span></a></div></nav>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-around items-center h-20 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 transition-all rounded-xl text-primary bg-surface-container-high" data-path="menu" href="#"><span class="material-symbols-outlined">menu_book</span><span class="text-label-md">Menu</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="story" href="#"><span class="material-symbols-outlined">local_fire_department</span><span class="text-label-md">Story</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="locations" href="#"><span class="material-symbols-outlined">pin_drop</span><span class="text-label-md">Location</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="profile" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-md">Profile</span></a></div></nav>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");

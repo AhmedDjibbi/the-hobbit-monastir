@@ -1,17 +1,17 @@
 {
   "business_name": "The Hobbit Coffee Shop",
   "slug": "the_hobbit_monastir",
-  "projectId": "6312216274182431103",
+  "projectId": "9658166802696206284",
   "tokens": {
     "industry": "dining",
-    "mood": "Thermal & Mineral Sanctuary",
-    "mood_description": "A bespoke luxury visual atmosphere reflecting The Hobbit Coffee Shop. Grounded in Thermal & Mineral Sanctuary, pairing architectural Cormorant Garamond headlines with high-legibility Plus Jakarta Sans copy, set against deep atmospheric #0B0F19.",
+    "mood": "Authentic Photo-Extracted (#806148 / #A39281)",
+    "mood_description": "A bespoke luxury visual atmosphere reflecting The Hobbit Coffee Shop, extracted directly from authentic venue photography. Anchored in rich primary #806148 with warm #A39281 and glowing #F9F0E6 accents, pairing architectural Cormorant Garamond headlines with high-legibility Plus Jakarta Sans copy, set against deep atmospheric background #010103.",
     "palette": {
-      "primary": "#0F172A",
-      "secondary": "#0D9488",
-      "accent": "#F59E0B",
-      "surface": "#1E293B",
-      "background": "#0B0F19"
+      "primary": "#806148",
+      "secondary": "#A39281",
+      "accent": "#F9F0E6",
+      "surface": "#1D1A1B",
+      "background": "#010103"
     },
     "typography": {
       "headline": "Cormorant Garamond",
@@ -24,7 +24,13 @@
     }
   },
   "screens": {
-    "home_desktop": "desktop/index.html",
-    "home_mobile": "mobile/index.html"
+    "home_desktop": "cbadbc69796548e2ac3b490950212862",
+    "home_mobile": "ca19ba0b37814c01b1d4ff5de3a289aa",
+    "services_desktop": "95826224135f4b7881253a8057208c07",
+    "services_mobile": "5cc09ac96c2941689ac31be872db7119",
+    "about_desktop": "4a4a0d8c9a4f4591ac8ba85290e0d2a6",
+    "about_mobile": "c78574643ba14c95a947d58a6be9f7ae",
+    "contact_desktop": "a2cd1455542e407484cef71df1f13845",
+    "contact_mobile": "fba8b26698b6446ead3fdac8adce3620"
   }
 }

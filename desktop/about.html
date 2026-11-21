@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#506c74", "error": "#ffb4ab", "secondary-fixed": "#f3dfcc", "primary": "#e6bfa1", "error-container": "#93000a", "surface-tint": "#e6bfa1", "primary-fixed": "#ffdcc2", "surface-variant": "#383432", "on-secondary": "#3a2e21", "inverse-on-surface": "#33302d", "on-secondary-fixed-variant": "#524436", "surface-dim": "#161311", "tertiary": "#aecbd4", "on-tertiary-fixed-variant": "#2f4b52", "on-primary-fixed": "#2b1704", "secondary-container": "#524436", "on-error": "#690005", "on-background": "#e9e1dd", "on-tertiary-container": "#ceecf6", "on-surface-variant": "#d3c4ba", "on-secondary-fixed": "#241a0e", "surface-container-highest": "#383432", "surface-container-low": "#1e1b19", "tertiary-fixed": "#cae8f1", "outline": "#9c8e85", "surface-container-high": "#2d2927", "on-tertiary": "#18343b", "on-primary-container": "#ffe1cc", "on-primary": "#432b16", "surface-card": "#1D1A1B", "secondary-fixed-dim": "#d6c3b1", "on-tertiary-fixed": "#001f26", "inverse-surface": "#e9e1dd", "metallic-highlight": "#F9F0E6", "surface-container-lowest": "#100e0c", "on-primary-fixed-variant": "#5c412a", "deep-background": "#010103", "outline-variant": "#4f453d", "on-surface": "#e9e1dd", "on-secondary-container": "#c4b2a0", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#aecbd4", "surface-bright": "#3c3836", "surface": "#161311", "secondary": "#d6c3b1", "surface-container": "#221f1d", "inverse-primary": "#765840", "background": "#161311", "primary-fixed-dim": "#e6bfa1", "primary-container": "#806148" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-lg": "2rem", "space-md": "1rem", "space-xl": "4rem", "space-sm": "0.5rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Cormorant Garamond" ], "headline-md": [ "Cormorant Garamond" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Cormorant Garamond" ], "headline-lg": [ "Cormorant Garamond" ], "label": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "headline-md": [ "32px", { "lineHeight": "40px", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "fontWeight": "600" } ], "label": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" } ] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-deep-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-deep-background/90 backdrop-blur-xl"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-headline-sm">local_cafe</span><span class="font-headline-lg text-headline-sm text-primary tracking-wider uppercase">The Hobbit</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg px-space-md py-space-xs"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="culinary" href="#">Culinary</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-lg"><a class="hidden lg:flex items-center gap-space-xs text-body-sm text-secondary hover:text-metallic-highlight transition-colors" href="tel:+21627954991"><span class="material-symbols-outlined text-[18px]">call</span>+216 27 954 991</a><a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg font-label text-label tracking-wide uppercase hover:bg-primary-fixed transition-all flex items-center gap-space-xs" data-path="reserve" href="#">Reserve Table on WhatsApp</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-deep-background min-h-screen"><div class="flex flex-col w-full bg-deep-background text-on-surface">
+<!-- 1. Hero Section -->
+<section class="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-cover bg-center -mt-20 pt-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHvHkm0bAbQvMTUyQBMzmHLUchvRcF4DoJLc8XA9Xy-hOVd02uEeiO_DnxdQ74UZeKu3JYAwzozvKvH84I8Ka1yE3j-BdyATOc0xnzjDp9iyDH51Yd2vgMLgT7InlfCg23fh3oaPHPEVk-Yw1KPZ0VGx6kvRpawM3sIks9MfrNejkivofk1hcmIv8AR0aj09sfVN0T92Thq4otsMh2_1xCZdPZKWaUErgRAJy5IUr-FosYNe7TaX02VRCC62RQlnf9KKGLacwqWdQ');">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-background via-deep-background/60 to-deep-background/30"></div>
+    <!-- ENFORCED SUBTLE BOTTOM FADE -->
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #010103 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    
+<div class="relative max-w-5xl mx-auto px-gutter text-center flex flex-col items-center z-10">
+<div class="inline-flex items-center gap-space-xs bg-surface-card/80 backdrop-blur-md px-space-md py-space-xs rounded-full mb-space-md text-secondary border border-outline/20 shadow-lg">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span class="font-label text-label uppercase tracking-widest text-metallic-highlight">Award of Excellence 2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-6xl text-metallic-highlight tracking-wide mb-space-md max-w-4xl">
+        The Hobbit Coffee Shop — Cozy Geek &amp; Boardgame Sanctuary in Monastir
+      </h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mb-space-xl">
+        Where timeless craftsmanship, deep fellowship, and meticulous artisanal roasting converge in an extraordinary subterranean retreat.
+      </p>
+<div class="flex items-center gap-space-md">
+<a class="bg-primary-container text-on-primary-container px-space-xl py-space-md rounded-lg font-label text-label tracking-wide uppercase hover:bg-primary transition-all shadow-lg" href="#heritage">
+          Explore Our Story
+        </a>
+</div>
+</div>
+</section>
+<!-- 2. Heritage & Vision Narrative -->
+<section class="py-space-xl px-gutter max-w-7xl mx-auto w-full" id="heritage">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="font-label text-label text-primary uppercase tracking-widest">Our Genesis</div>
+<h2 class="font-headline-md text-headline-md md:text-5xl text-metallic-highlight">
+          A Sanctuary For Fellow Travelers &amp; Connoisseurs
+        </h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+          Founded in the historic heart of Monastir, The Hobbit Coffee Shop was born from an uncompromising devotion to exceptional coffee and communal storytelling. We envisioned a sanctuary insulated from the frantic pace of the modern world—a place where handcrafted woodwork, glowing hearths, and the clatter of tabletop dice create an atmosphere of pure solace.
+        </p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+          Every bean is ethically sourced, roasted to exacting standards, and brewed with artisanal precision. Whether you come to conquer a boardgame campaign or to savor a quiet single-origin pour, our doors are open to fellowship.
+        </p>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="absolute -inset-4 bg-primary/10 rounded-xl filter blur-2xl"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-card aspect-[4/3] bg-cover bg-center" data-alt="Interior shot of The Hobbit Coffee Shop showcasing warm wood furnishings, atmospheric amber lighting, and cozy seating arrangements." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALdxY3ZKzE3FouDiSLQ7aJfjGeNvuwWhWTJM2zuLcl5275NmuWYP5ZD6618oenCdSIQV0y5m06Vtfb5m738jpCKdokJ6gagvnuj_tmRSAvr6POKue_jMsIY8k16bpPzzcQUDLDxqbqrnVCuXtaGcvHStTjtMPB9gwBeHqSUU6nUz4IsgBol9z8vvgIX95aMU944DViO-hihktgUeruAzK-U4_60tFk1mc8Zl1Sn773xXS6WZ-P6KZIW6Ds9MMzAUq47_Hk6y9QaWc');"></div>
+</div>
+</div>
+</section>
+<!-- 3. Master Practitioners & Founders -->
+<section class="py-space-xl bg-surface-container-lowest w-full">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<div class="font-label text-label text-primary uppercase tracking-widest mb-space-xs">The Artisans</div>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">Master Practitioners &amp; Founders</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- Founder 1 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="w-full h-80 rounded-lg bg-cover bg-center mb-space-sm" data-alt="Portrait of master roaster and co-founder in an atmospheric artisanal coffee setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCe4wU7ZHMOIOO9bW97eO7Zdrk6ZvdnYcMvl2tt7izGQpWS3fzWM3llm5yFoH9WokZ5oUVYMuDigRwmibM2xKpNMEquCbpFesgHXLTPTUiKsml2elt_k9bvJuVnaK7SRz4D-L9HhGioR9hvwl46r8AjEp5zb6dH2F2DqzDtSuUOT2gdE-DR_lERdrHEI--tpFbPCvSt_lB6dqgdLQn4afuHjc3kRBvPU7BoL5tNtS-RrVXsd2R0hYO7tt1mPAmGpRfkorz6t2g84kQ');"></div>
+<div class="font-label text-label text-primary uppercase tracking-wider">Master Roaster &amp; Co-Founder</div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">Aymen Ben Salem</h3>
+<p class="font-body-md text-on-surface-variant">
+            With over a decade dedicated to mastering extraction curves and bean origins, Aymen curates our signature roasts with a reverence for tradition and scientific precision.
+          </p>
+</div>
+<!-- Founder 2 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="w-full h-80 rounded-lg bg-cover bg-center mb-space-sm" data-alt="Portrait of hospitality director and co-founder inside the geek sanctuary." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAA_UqkQScipbmLb9ug4HbIeJP9EP_wVubYTEZ3c5SWFy54rtAa9pJnw5r9Rn5NhQ7118wyiq8pyXOaaG349iYpgqiAcBn8bt98llr3TMilut98On2RP1nfDyJRya5isHlvAUOegE6cV1-0-v6J0885LfEN_ZfkyU9tUFEgcINgVzUHPiOFWYUzqh11CK_cZccJuKLma3wXA7GsXiOQerjLMlrr47DnY9IL8v-EDyjjMlLeoLLL1NCp2EICs2YWfoEJAs60khTCJec');"></div>
+<div class="font-label text-label text-primary uppercase tracking-wider">Sanctuary Curator &amp; Co-Founder</div>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">Youssef El Kateb</h3>
+<p class="font-body-md text-on-surface-variant">
+            A passionate tabletop enthusiast and hospitality architect, Youssef designed every corner of The Hobbit to foster deep human connection, imagination, and comfort.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. The Space & Environment -->
+<section class="py-space-xl px-gutter max-w-7xl mx-auto w-full">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<div class="font-label text-label text-primary uppercase tracking-widest mb-space-xs">Architecture &amp; Vibe</div>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight">The Space &amp; Environment</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mt-space-xs">Designed with natural timber, wrought iron details, and amber illumination to recreate legendary halls.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="h-64 bg-cover bg-center" data-alt="Cozy nook with leather seating and warm lighting at The Hobbit Coffee Shop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCZA-GpytsOlJTLlFl9sC8ztJ5KK73EK8dOCubbuVZUN-TygyPWw3KgHjrBbvq09NNdc4ClrOlaUsigZeNJStAKmXZcZJxpAQs86JqUJS4d2-L1exsO_uj1CL2d1H_-m09i9tdkHrDC5Bn8aMT9B2KkGncgSTcUPPM8eVFyE_zy4c5SEPxR7Ec008VQNI5FM5yJBpjCjx_wk-ueZgumEuxUKEaIHkiaqb1X16iqvZ0AvElc7PFo5JvGnCIhzddkIkh_jFfLmG8lxM');"></div>
+<div class="p-space-lg flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">The Hearth Nook</h3>
+<p class="font-body-sm text-on-surface-variant">Intimate seating surrounded by handcrafted wooden bookselves and boardgame libraries.</p>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="h-64 bg-cover bg-center" data-alt="Main bar area featuring artisanal espresso machinery and warm ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1YVGx8EHMyA6DF7r4QC4x0Kjv_0H7TtKBoUfdg1w2De6jGnZBnKiF896gHLZKFlLhx_Dkdy2_lB6D2s5lcXJrjsfGMwdJDhtqGJjQnbCYSKZJ7pxkSdd4JFsyo5lsLqBHvlbBcwe9EMgAnJE1BO-e6Aff16IG7xV-zNSAOfsauyGFEll3ge3z90m7gWMrk4qyTWQpLIBkQEqM2moKOzjbH9fzW11Fz6kvACZwFfEkbeiRz5DVgQM-a9lOuXwSZFtNddjKv_tTwq4');"></div>
+<div class="p-space-lg flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">The Brewing Tavern</h3>
+<p class="font-body-sm text-on-surface-variant">Where master baristas perform alchemy with specialty beans and precision instruments.</p>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="h-64 bg-cover bg-center" data-alt="Tabletop gaming corner set up for an immersive afternoon campaign." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5Usun68vGTUUiQpxshDZq-YBsvj5_pSDfu1lFnZjUZH9OkHZ23uLo9_U-5Q4lcIinv0EpKa18f458lFRB5-In4qefXg6m5wn1yS1PktGEB7B2NqWxHaRGeC1sssqNvp_n2gpsMNGkTYGPepJtNlh14CiPSvL3agfT9UBOZC8h1Qn6ReB5I1m0IhDCYR-tcsiXVETS6CvI_lJ-XoOfvJoXmFU3hYq7K31dHBGKP9b0MMu0FN3fbkQ41J8qyoksVkB8fU5w3zaeCCk');"></div>
+<div class="p-space-lg flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">The Fellowship Hall</h3>
+<p class="font-body-sm text-on-surface-variant">Expansive oak tables built for epic boardgame sessions and spirited discussions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Certifications & Quality Commitments -->
+<section class="py-space-xl bg-surface-container-low w-full">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col items-center">
+<div class="font-label text-label text-primary uppercase tracking-widest mb-space-xs">Excellence Guaranteed</div>
+<h2 class="font-headline-md text-headline-md text-metallic-highlight mb-space-xl text-center">Certifications &amp; Quality Commitments</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg w-full">
+<div class="bg-surface-card p-space-lg rounded-xl flex flex-col items-center text-center gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">100% Organic Sourcing</h3>
+<p class="font-body-sm text-on-surface-variant">Direct trade beans harvested from sustainable high-altitude farms.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl flex flex-col items-center text-center gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">Artisanal Roasting</h3>
+<p class="font-body-sm text-on-surface-variant">Small-batch roasting protocols optimized for nuanced flavor profiles.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl flex flex-col items-center text-center gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">Community First</h3>
+<p class="font-body-sm text-on-surface-variant">A dedicated safe haven for geek culture, artists, and strategists.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl flex flex-col items-center text-center gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
+<h3 class="font-headline-sm text-headline-sm text-metallic-highlight">Award Winning</h3>
+<p class="font-body-sm text-on-surface-variant">Recognized consistently for ambiance and culinary hospitality.</p>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-body-sm"><div>© The Hobbit Coffee Shop. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="tel:+21627954991">+216 27 954 991</a></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
+  if (!form) return;
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const serviceInput = form.querySelector('[name*="service"], [name*="offering"], select') || {value: "Standard Inquiry"};
+    const dateInput = form.querySelector('input[type="date"]') || {value: "Flexible"};
+    const timeInput = form.querySelector('input[type="radio"]:checked, input[type="time"], [name*="time"]') || {value: "Flexible"};
+    const nameInput = form.querySelector('input[type="text"], [name*="name"]') || {value: "Valued Client"};
+    const partyInput = form.querySelector('[name*="guest"], [name*="party"]') || {value: "1"};
+    const notesInput = form.querySelector('textarea, [name*="notes"]') || {value: "None"};
+
+    const msg = "*New Inquiry / Booking Request*\n" +
+                "• *Business:* The Hobbit Coffee Shop (Dining)\n" +
+                "• *Selected Item:* " + (serviceInput.value || "Bespoke Request") + "\n" +
+                "• *Date & Time:* " + dateInput.value + " at " + timeInput.value + "\n" +
+                "• *Party Size:* " + partyInput.value + "\n" +
+                "• *Client Name:* " + nameInput.value + "\n" +
+                "• *Special Notes:* " + notesInput.value;
+
+    const waUrl = "https://wa.me/21627954991?text=" + encodeURIComponent(msg);
+    window.open(waUrl, "_blank");
+  });
+});
+</script>
+
+</body></html>
