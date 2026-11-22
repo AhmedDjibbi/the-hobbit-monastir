@@ -13,7 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
 (function() {
   function checkViewport() {
-    if (window.innerWidth < 768) {
+    var w = window.frameElement ? document.documentElement.clientWidth : window.innerWidth;
+    if (w < 768) {
       var currentFile = window.location.pathname.split('/').pop() || 'index.html';
       window.location.replace('../mobile/' + currentFile + window.location.search + window.location.hash);
     }

@@ -25,7 +25,8 @@
   <script>
 (function() {
   function checkViewport() {
-    if (window.innerWidth >= 768 && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+    var w = window.frameElement ? document.documentElement.clientWidth : window.innerWidth;
+    if (w >= 768 && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       var currentFile = window.location.pathname.split('/').pop() || 'index.html';
       window.location.replace('../desktop/' + currentFile + window.location.search + window.location.hash);
     }
