@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100%;max-width:100vw;overflow-x:hidden;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
 (function(){
   var origWarn = console.warn;
   console.warn = function(){
@@ -54,7 +54,8 @@
   </div>
 </header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full bg-surface text-on-surface pb-12">
 <!-- Hero Section -->
-<div class="relative w-full min-h-[520px] flex flex-col justify-start p-gutter pt-8 pb-space-xl overflow-hidden rounded-b-2xl mb-space-lg bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/gmaps_photo_2.jpg');">
+<div class="relative w-full min-h-[520px] flex flex-col justify-start p-gutter pt-8 pb-space-xl overflow-hidden rounded-b-2xl mb-space-lg shadow-2xl">
+  <div class="absolute inset-0 w-full h-full bg-cover bg-center z-0 scale-105 transition-transform duration-1000" style="background-image: url('../assets/gmaps_photo_2.jpg');"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
     <!-- ENFORCED SUBTLE BOTTOM FADE -->
     <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #010103 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
