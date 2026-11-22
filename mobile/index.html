@@ -27,28 +27,53 @@
   window.addEventListener('resize', checkViewport);
 })();
 </script>
-</head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-primary tracking-wide">The Hobbit</span></div><div class="flex items-center gap-space-sm"><a class="flex items-center justify-center w-11 h-11 rounded-full bg-primary-container text-on-primary-container" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface">
+</head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/40 pt-safe">
+  <div class="h-16 px-gutter flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2.5 no-underline">
+      <img src="../assets/logo_icon.svg" alt="The Hobbit" class="w-9 h-9 object-contain drop-shadow" />
+      <div class="flex flex-col">
+        <span class="font-headline-sm text-primary tracking-wider leading-none text-base font-semibold">THE HOBBIT</span>
+        <span class="text-[8px] tracking-[0.2em] text-[#D4AF37] font-semibold uppercase mt-0.5">MONASTIR</span>
+      </div>
+    </a>
+    <div class="flex items-center gap-2">
+      <a class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-container text-on-primary-container hover:scale-105 active:scale-95 transition-transform shadow" href="https://wa.me/21627954991?text=Hello%20The%20Hobbit,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" title="WhatsApp Chat">
+        <span class="material-symbols-outlined text-[20px]">chat</span>
+      </a>
+      <a class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container text-primary hover:scale-105 active:scale-95 transition-transform border border-outline-variant/30" href="tel:+21627954991" title="Call Us">
+        <span class="material-symbols-outlined text-[18px]">call</span>
+      </a>
+    </div>
+  </div>
+</header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface">
 <!-- 1. HERO SECTION -->
-<section class="relative w-full h-[751px] min-h-[600px] flex flex-col justify-end p-gutter pb-space-lg overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center z-0" data-alt="A warm, atmospheric interior of The Hobbit Coffee Shop in Monastir showing rustic wooden tables, dim hearth lighting, bookshelves filled with board games, and cozy geek-chic decor." style="background-image: url('../assets/gmaps_photo_1.jpg')"></div>
-    <!-- ENFORCED SUBTLE BOTTOM FADE -->
-    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #010103 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
-    
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent z-10"></div>
-<div class="relative z-20 flex flex-col items-start gap-space-sm">
-<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container text-label-md shadow-lg backdrop-blur-md">
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
-<span>Award of Excellence 2026</span>
-</div>
-<h1 class="font-headline-lg text-primary tracking-tight">The Hobbit Coffee Shop</h1>
-<p class="font-body-md text-on-surface-variant max-w-sm">Cozy Geek &amp; Boardgame Sanctuary in Monastir. Step into Middle-earth for exceptional specialty brews and legendary table fellowship.</p>
-<div class="flex items-center gap-space-sm w-full mt-space-xs">
-<a class="flex-1 flex items-center justify-center gap-space-xs py-3 px-space-md rounded-xl bg-primary text-on-primary font-body-md font-semibold transition-transform active:scale-95 shadow-xl" href="https://wa.me/21627954991?text=Hello%20The%20Hobbit,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
-<span>Reserve on WhatsApp</span>
-</a>
-</div>
-</div>
+<section class="relative w-full h-[68vh] min-h-[460px] max-h-[580px] flex flex-col justify-end p-gutter pb-space-md overflow-hidden rounded-b-3xl shadow-2xl">
+  <div class="absolute inset-0 bg-cover bg-center z-0 scale-105 transition-transform duration-1000" data-alt="The Hobbit Coffee Shop Sanctuary Interior" style="background-image: url('../assets/gmaps_photo_1.jpg')"></div>
+  <!-- ENFORCED SUBTLE BOTTOM FADE -->
+  <div class="absolute bottom-0 inset-x-0 h-36 pointer-events-none z-20" style="background: linear-gradient(to top, #131319 0%, rgba(19,19,25,0.7) 45%, transparent 100%);"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/75 to-surface/30 z-10"></div>
+  <div class="relative z-20 flex flex-col items-start gap-2.5 pb-2">
+    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/90 text-on-primary-container text-xs font-medium tracking-wide shadow-lg backdrop-blur-md border border-primary/20">
+      <span class="material-symbols-outlined text-[15px] text-[#D4AF37]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+      <span class="text-[11px] font-semibold tracking-wider uppercase">Award of Excellence 2026</span>
+    </div>
+    <h1 class="font-headline-xl text-[38px] leading-[44px] text-metallic-highlight font-semibold tracking-tight text-white drop-shadow-md font-['Cormorant_Garamond']">
+      The Hobbit <span class="text-primary font-normal italic block text-[26px] leading-[32px] mt-0.5">Coffee &amp; Boardgame Sanctuary</span>
+    </h1>
+    <p class="font-body-md text-on-surface-variant text-sm leading-relaxed max-w-sm line-clamp-2 drop-shadow">
+      Artisanal specialty brews, handcrafted treats, and hundreds of curated tabletop games in a warm fantasy haven.
+    </p>
+    <div class="flex items-center gap-2.5 w-full mt-1.5">
+      <a class="flex-1 flex items-center justify-center gap-2 py-3 px-space-md rounded-xl bg-primary text-on-primary font-body-md font-semibold text-sm transition-transform active:scale-95 shadow-xl hover:bg-primary-fixed" href="https://wa.me/21627954991?text=Hello%20The%20Hobbit,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank">
+        <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+        <span>Reserve on WhatsApp</span>
+      </a>
+      <a class="flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-surface-container/90 text-primary font-semibold text-sm border border-primary/30 transition-transform active:scale-95 shadow-md" href="services.html">
+        <span class="material-symbols-outlined text-[18px]">menu_book</span>
+        <span>Menu</span>
+      </a>
+    </div>
+  </div>
 </section>
 <!-- 2. BRAND NARRATIVE / DISTINCTIVE VALUE -->
 <section class="w-full px-gutter py-space-lg flex flex-col gap-space-md bg-surface">
@@ -278,7 +303,26 @@
       window.open(`https://wa.me/21627954991?text=${message}`, '_blank');
     });
   </script>
-</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-around items-center h-20 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 transition-all rounded-xl text-primary bg-surface-container-high" data-path="menu" href="services.html"><span class="material-symbols-outlined">menu_book</span><span class="text-label-md">Menu</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="story" href="about.html"><span class="material-symbols-outlined">local_fire_department</span><span class="text-label-md">Story</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="locations" href="#"><span class="material-symbols-outlined">pin_drop</span><span class="text-label-md">Location</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant transition-all rounded-xl" data-path="profile" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-md">Profile</span></a></div></nav>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl border-t border-surface-container-high/60 shadow-2xl">
+  <div class="flex justify-around items-center h-16 px-2">
+    <a class="flex flex-col items-center justify-center gap-1 py-1.5 px-3 transition-all rounded-xl text-primary bg-surface-container-high" data-path="home" href="index.html">
+      <span class="material-symbols-outlined text-[20px]">home</span>
+      <span class="text-[11px] font-semibold tracking-wide">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center gap-1 py-1.5 px-3 transition-all rounded-xl text-on-surface-variant hover:text-primary" data-path="menu" href="services.html">
+      <span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+      <span class="text-[11px] font-semibold tracking-wide">Menu</span>
+    </a>
+    <a class="flex flex-col items-center justify-center gap-1 py-1.5 px-3 transition-all rounded-xl text-on-surface-variant hover:text-primary" data-path="story" href="about.html">
+      <span class="material-symbols-outlined text-[20px]">auto_stories</span>
+      <span class="text-[11px] font-semibold tracking-wide">Story</span>
+    </a>
+    <a class="flex flex-col items-center justify-center gap-1 py-1.5 px-3 transition-all rounded-xl text-on-surface-variant hover:text-primary" data-path="contact" href="contact.html">
+      <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+      <span class="text-[11px] font-semibold tracking-wide">Reserve</span>
+    </a>
+  </div>
+</nav>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
