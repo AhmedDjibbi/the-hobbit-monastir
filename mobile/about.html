@@ -22,7 +22,19 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-metallic-highlight"><span class="material-symbols-outlined">menu</span></button><span class="font-headline-sm tracking-widest text-metallic-highlight">THE HOBBIT</span></div><div class="flex items-center gap-space-sm"><a class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-metallic-highlight" href="tel:5550192"><span class="material-symbols-outlined">call</span></a><a class="px-space-md py-2 bg-primary-container text-on-primary-container rounded-lg font-label text-label flex items-center justify-center" data-path="reserve" href="contact.html">RESERVE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full text-on-surface">
+  <script>
+(function() {
+  function checkViewport() {
+    if (window.innerWidth >= 768 && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      var currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      window.location.replace('../desktop/' + currentFile + window.location.search + window.location.hash);
+    }
+  }
+  checkViewport();
+  window.addEventListener('resize', checkViewport);
+})();
+</script>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-metallic-highlight"><span class="material-symbols-outlined">menu</span></button><span class="font-headline-sm tracking-widest text-metallic-highlight">THE HOBBIT</span></div><div class="flex items-center gap-space-sm"><a class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-metallic-highlight" href="tel:5550192"><span class="material-symbols-outlined">call</span></a><a class="px-space-md py-2 bg-primary-container text-on-primary-container rounded-lg font-label text-label flex items-center justify-center" data-path="reserve" href="contact.html">RESERVE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full text-on-surface">
 <!-- Hero Section -->
 <section class="relative w-full -mx-gutter px-gutter py-12 flex flex-col justify-end min-h-[500px] bg-cover bg-center" style="background-image: url('../assets/gmaps_photo_3.jpg')">
 <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
